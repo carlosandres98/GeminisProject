@@ -11,7 +11,7 @@ export class ProductOfertComponent implements OnInit {
   @Input() productOfertList: ProductI[] = [];
   public productOfert: ProductI;
   constructor(private productService: ProductServiceService) { 
-    this.productOfertList = productService.getProductList();
+    
   }
 
   ngOnInit() {
