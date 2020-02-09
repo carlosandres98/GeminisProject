@@ -4,12 +4,13 @@ import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 
 
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
-
   {path: 'login', component: LoginComponent},
+  {path: 'detail-product/:product', component: ProductDetailComponent},
   {path : 'products', component : ProductsComponent},
   {path : 'register', component : RegisterComponent },
   {path: 'dashboard', component: DashboardComponent},

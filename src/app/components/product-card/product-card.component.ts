@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ProductI } from '../../services/product-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-card',
@@ -8,11 +9,14 @@ import { ProductI } from '../../services/product-service.service';
 })
 export class ProductCardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private rt: Router) { }
   @Input() productList: ProductI[] = [];
   @Input() title: any;
 
   ngOnInit() {
   }
 
+  goDetailProduct(productName: ProductI) {
+    this.rt.navigate(['detail-product', productName])
+  };
 }

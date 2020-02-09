@@ -5,9 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class ProductServiceService {
 
-  constructor() { }
 
-  public offertWeekProductList: ProductI[] = [
+  public productList: ProductI[] = [
     {
       name: 'Saco de invierno',
       image: 'assets/img/smoking.jpg',
@@ -27,10 +26,7 @@ export class ProductServiceService {
       name: 'Audifonos BOSE XD-456',
       image: 'assets/img/smoking.jpg',
       price: 1567000
-    }
-  ];
-
-  public recommendedProductList: ProductI[] = [
+    },
     {
       name: 'Mueble Sofa',
       image: 'assets/img/smoking.jpg',
@@ -51,11 +47,41 @@ export class ProductServiceService {
       image: 'assets/img/smoking.jpg',
       price: 98000
     }
+
   ];
 
+  public offertWeekProductList: ProductI[] = [
+
+  ];
+  public recommendedProductList: ProductI[] = [
+
+  ];
+  constructor() {
+    this.offertWeekProductList.push(this.productList[0]);
+    this.offertWeekProductList.push(this.productList[1]);
+    this.offertWeekProductList.push(this.productList[2]);
+    this.offertWeekProductList.push(this.productList[3]);
+    this.recommendedProductList.push(this.productList[4]);
+    this.recommendedProductList.push(this.productList[5]);
+    this.recommendedProductList.push(this.productList[6]);
+    this.recommendedProductList.push(this.productList[7]);
+  }
 
   getoffertWeekProductList = () => this.offertWeekProductList;
   getrecommendedProductList = () => this.recommendedProductList;
+
+  getProductByName = (productName: string) => {
+    let productFind: ProductI;
+    for (let product of this.productList) {
+      if (product.name == productName) {
+        productFind = product;
+        break;
+      }else{
+        productFind = null;
+      }
+    }
+    return productFind;
+  };
 
 }
 
