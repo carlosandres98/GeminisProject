@@ -10,22 +10,22 @@ export class ProductServiceService {
   public offertWeekProductList: ProductI[] = [
     {
       name: 'Saco de invierno',
-      image: '',
+      image: 'assets/img/smoking.jpg',
       price: 150000
     },
     {
       name: 'Maleta KANKEN',
-      image: '',
+      image: 'assets/img/smoking.jpg',
       price: 85000
     },
     {
       name: 'Smart Watch Negro',
-      image: '',
+      image: 'assets/img/smoking.jpg',
       price: 750000
     },
     {
       name: 'Audifonos BOSE XD-456',
-      image: '',
+      image: 'assets/img/smoking.jpg',
       price: 1567000
     }
   ];
@@ -33,22 +33,22 @@ export class ProductServiceService {
   public recommendedProductList: ProductI[] = [
     {
       name: 'Mueble Sofa',
-      image: '',
+      image: 'assets/img/smoking.jpg',
       price: 54000
     },
     {
       name: 'Camisa Polo',
-      image: '',
+      image: 'assets/img/smoking.jpg',
       price: 45000
     },
     {
       name: 'Billetera de Cuero',
-      image: '',
+      image: 'assets/img/smoking.jpg',
       price: 64000
     },
     {
       name: 'Jean Azul',
-      image: '',
+      image: 'assets/img/smoking.jpg',
       price: 98000
     }
   ];
