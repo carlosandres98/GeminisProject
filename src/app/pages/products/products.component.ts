@@ -10,9 +10,14 @@ export class ProductsComponent implements OnInit {
 
   public productOfertList: ProductI[] = [];
   public productOfert: ProductI;
+  public recommendedProductList : ProductI [] = [];
+
+  public offertWeekTitle = 'Ofertas de la semana';
+  public recommendedTitle = 'Recomendados';
 
   constructor(private productService: ProductServiceService) {
-    this.productOfertList = productService.getProductList();
+    this.productOfertList = productService.getoffertWeekProductList();
+    this.recommendedProductList = productService.getrecommendedProductList();
   }
 
   ngOnInit() {

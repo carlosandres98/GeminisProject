@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ProductOfertComponent } from './components/product-ofert/product-ofert.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { ProductOfertComponent } from './components/product-ofert/product-ofert.
   
     ProductsComponent,
   
-    ProductOfertComponent
+    ProductOfertComponent,
+  
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,

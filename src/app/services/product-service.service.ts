@@ -7,7 +7,7 @@ export class ProductServiceService {
 
   constructor() { }
 
-  public productList: ProductI[] = [
+  public offertWeekProductList: ProductI[] = [
     {
       name: 'Saco de invierno',
       image: '',
@@ -30,7 +30,32 @@ export class ProductServiceService {
     }
   ];
 
-  getProductList = () => this.productList;
+  public recommendedProductList: ProductI[] = [
+    {
+      name: 'Mueble Sofa',
+      image: '',
+      price: 54000
+    },
+    {
+      name: 'Camisa Polo',
+      image: '',
+      price: 45000
+    },
+    {
+      name: 'Billetera de Cuero',
+      image: '',
+      price: 64000
+    },
+    {
+      name: 'Jean Azul',
+      image: '',
+      price: 98000
+    }
+  ];
+
+
+  getoffertWeekProductList = () => this.offertWeekProductList;
+  getrecommendedProductList = () => this.recommendedProductList;
 
 }
 
