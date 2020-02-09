@@ -10,42 +10,50 @@ export class ProductServiceService {
     {
       name: 'Saco de invierno',
       image: 'assets/img/smoking.jpg',
-      price: 150000
+      price: 150000,
+      description : 'It is a long established fact that a reader will be distracted by the readable content of a page when'
     },
     {
       name: 'Maleta KANKEN',
       image: 'assets/img/smoking.jpg',
-      price: 85000
+      price: 85000,
+      description : 'It is a long established fact that a reader will be distracted by the readable content of a page when'
     },
     {
       name: 'Smart Watch Negro',
       image: 'assets/img/smoking.jpg',
-      price: 750000
+      price: 750000,
+      description : 'It is a long established fact that a reader will be distracted by the readable content of a page when'
     },
     {
       name: 'Audifonos BOSE XD-456',
       image: 'assets/img/smoking.jpg',
-      price: 1567000
+      price: 1567000,
+      description : 'It is a long established fact that a reader will be distracted by the readable content of a page when'
     },
     {
       name: 'Mueble Sofa',
       image: 'assets/img/smoking.jpg',
-      price: 54000
+      price: 54000,
+      description : 'It is a long established fact that a reader will be distracted by the readable content of a page when'
     },
     {
       name: 'Camisa Polo',
       image: 'assets/img/smoking.jpg',
-      price: 45000
+      price: 45000,
+      description : 'It is a long established fact that a reader will be distracted by the readable content of a page when'
     },
     {
       name: 'Billetera de Cuero',
       image: 'assets/img/smoking.jpg',
-      price: 64000
+      price: 64000,
+      description : 'It is a long established fact that a reader will be distracted by the readable content of a page when'
     },
     {
       name: 'Jean Azul',
       image: 'assets/img/smoking.jpg',
-      price: 98000
+      price: 98000,
+      description : 'It is a long established fact that a reader will be distracted by the readable content of a page when'
     }
 
   ];
@@ -88,5 +96,6 @@ export class ProductServiceService {
 export interface ProductI {
   image: string;
   name: string;
-  price: number
+  price: number;
+  description : string;
 }
