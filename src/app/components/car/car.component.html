@@ -4,11 +4,11 @@
     </div>
     <div *ngIf="CarList.length==0" class="col-md-6 col-xs-12">
         <h3 id="color-text">No tienes productos aún</h3>
-        <div id="color-text" class="col-6"><button class="btn btn-outline-primary full-width" routerLink="/products">Buscar</button></div>
+        <div id="color-text" class="col-6"><button class="btn btn-outline-primary full-width" routerLink="/dashboard">Buscar</button></div>
     </div>
     <div *ngIf="CarList.length!=0" class="col-md-6 col-xs-12">
         <h3 id="color-text" >Tienes: {{countProducts}} Productos</h3>
-        <div id="color-text" class="col-6"><button class="btn btn-outline-primary full-width" routerLink="/products">Buscar</button></div>
+        <div id="color-text" class="col-6"><button class="btn btn-outline-primary full-width" routerLink="/dashboard">Buscar</button></div>
     </div>
 </div>
 <table *ngIf="CarList!=null" class="table">
