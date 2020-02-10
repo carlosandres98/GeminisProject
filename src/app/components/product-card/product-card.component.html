@@ -2,22 +2,20 @@
     <h2 class="m-5">{{title}}</h2>
     <div class="m-5">
         <div class="row">
-            <div (click)="goDetailProduct(product.name)"  id="select" *ngFor="let product of productList" class="col-md-3 col-sm-6 col-xs-12">
+            <div (click)="goDetailProduct(product.name)" id="select" *ngFor="let product of productList"
+                class="col-md-3 col-sm-6 col-xs-12">
                 <div class="card m-3">
                     <img [src]="product.image" class="card-img-top" alt="...">
                     <div class="card-body">
 
                         <h4>{{product.name}}</h4>
                         <h3>${{product.price}}</h3>
-                        <div class="row">
-                            <div class="col-md-6 col-xs-12">
-                                <button type="submit" class="btn btn-outline-primary full-width"
-                                    (click)="goAddToCar()">Al carrito</button>
-                            </div>
-                            <div class="col-md-6 col-xs-12">
-                                <button type="submit" class="btn btn-primary full-width"
-                                    (click)="goBuy()">Comprar</button>
-                            </div>
+                        <div class="m-2"> 
+                            <button type="submit" class="btn btn-outline-primary full-width" (click)="goAddToCar()">Al
+                                carrito</button>
+                        </div>
+                        <div class="m-2">
+                            <button type="submit" class="btn btn-primary full-width" (click)="goBuy()">Comprar</button>
                         </div>
                     </div>
                 </div>
