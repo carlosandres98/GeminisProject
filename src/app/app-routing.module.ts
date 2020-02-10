@@ -7,6 +7,7 @@ import { ProductsComponent } from './pages/products/products.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { PersonalProfileComponent } from './components/personal-profile/personal-profile.component';
 import { CarComponent } from './components/car/car.component';
+import { HelpcenterComponent } from './pages/helpcenter/helpcenter.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,9 @@ const routes: Routes = [
   {path : 'products', component : ProductsComponent},
   {path : 'register', component : RegisterComponent },
   {path: 'dashboard', component: DashboardComponent},
-  {path: '*', component: LoginComponent}
+  {path: '*', component: LoginComponent},
+  {path: 'helpcenter', component: HelpcenterComponent}
+
 
 ];
 

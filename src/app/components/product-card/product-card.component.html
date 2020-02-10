@@ -1,21 +1,31 @@
 <div>
     <h2 class="m-5">{{title}}</h2>
-    <div class="m-5">
-        <div class="row">
-            <div (click)="goDetailProduct(product.name)" id="select" *ngFor="let product of productList"
-                class="col-md-3 col-sm-6 col-xs-12">
-                <div class="card m-3">
-                    <img [src]="product.image" class="card-img-top" alt="...">
-                    <div class="card-body">
+    <div class="row row-design-content">
+        <div (click)="goDetailProduct(product.name)" id="select" *ngFor="let product of productList"
+            class="col-md-3 col-sm-6 col-xs-12">
+            <div class="card m-3">
+                <img [src]="product.image" class="card-img-top card-design-image" alt="...">
+                <div class="card-body">
 
-                        <h4>{{product.name}}</h4>
-                        <h3>${{product.price}}</h3>
-                        <div class="m-2"> 
-                            <button type="submit" class="btn btn-outline-primary full-width" (click)="goAddToCar(product.name)"> <img src="assets/icons/cart.svg"  alt=""> Añadir al carrito</button>
-                                
+                    <div class="card-design-text-container">
+                        <h4 class="card-design-text-primary">{{product.name}}</h4>
+                        <h3 class="card-design-text-secondary">${{product.price}}</h3>
+                    </div>
+                    <div class="row" style="text-align: center; justify-content: center;">
+                        <div class="btnToBuy card-design-col-adjust-btn">
+                            <button class="mdc-button btn btn-outline-primary full-width btn-size-container"
+                                (click)="goAddToCar(product.name)">
+                                <i class="material-icons mdc-button__icon card-design-img-button"
+                                    aria-hidden="true">shopping_cart</i>
+                                <span>Al carrito</span>
+                            </button>
                         </div>
-                        <div class="m-2">
-                            <button type="submit" class="btn btn-primary full-width" (click)="goBuy()">Comprar</button>
+                        <div class="btnToBuy card-design-col-adjust-btn">
+                            <button class="mdc-button btn btn-primary full-width btn-size-container" (click)="goBuy()">
+                                <i class="material-icons mdc-button__icon card-design-img-button"
+                                    aria-hidden="true">shopping_basket</i>
+                                <span>Comprar</span>
+                            </button>
                         </div>
                     </div>
                 </div>

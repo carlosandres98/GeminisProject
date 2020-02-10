@@ -15,7 +15,8 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { SlideComponent } from './components/slide/slide.component';
 import { PersonalProfileComponent } from './components/personal-profile/personal-profile.component';
 import { CarComponent } from './components/car/car.component';
-import {FormsModule} from '@angular/forms';
+import { HelpcenterComponent } from './pages/helpcenter/helpcenter.component';
+import { HelpoptionsComponent } from './helpoptions/helpoptions.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,11 @@ import {FormsModule} from '@angular/forms';
   
     PersonalProfileComponent,
   
-    CarComponent
+    CarComponent,
+  
+    HelpcenterComponent,
+  
+    HelpoptionsComponent
   ],
   imports: [
     BrowserModule,
