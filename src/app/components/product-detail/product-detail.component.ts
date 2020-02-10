@@ -25,7 +25,6 @@ export class ProductDetailComponent implements OnInit {
       productFind = false;
     } else {
       productFind = true;
-      console.log(this.product);
     }
 
 

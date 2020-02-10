@@ -12,6 +12,7 @@ import { ProductOfertComponent } from './components/product-ofert/product-ofert.
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { SlideComponent } from './components/slide/slide.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,9 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
   
     FooterComponent,
   
-    ProductDetailComponent
+    ProductDetailComponent,
+  
+    SlideComponent
   ],
   imports: [
     BrowserModule,
