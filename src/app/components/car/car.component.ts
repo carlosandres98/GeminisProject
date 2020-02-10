@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ProductServiceService, ProductI } from '../../services/product-service.service';
 
 @Component({
   selector: 'app-car',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarComponent implements OnInit {
 
-  constructor() { }
+  public countProducts : number;
+  public CarList : ProductI [] = null;
+  constructor(private act:ActivatedRoute, private productService:ProductServiceService) { 
+    this.CarList = productService.getoffertWeekProductList();
+    this.countProducts = this.CarList.length;
+  }
 
   ngOnInit() {
+    
   }
 
 }
