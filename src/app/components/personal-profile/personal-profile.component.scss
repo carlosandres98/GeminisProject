@@ -12,10 +12,17 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.info-content-profile{
+.info-content-profile {
   margin: 2%;
 }
 
-.table td, .table th {
+.table td,
+.table th {
   vertical-align: middle;
+}
+#data {
+  justify-content: center;
+}
+#btn-editar {
+  justify-content: center;
 }
