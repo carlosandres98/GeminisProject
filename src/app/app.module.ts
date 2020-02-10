@@ -16,9 +16,10 @@ import { SlideComponent } from './components/slide/slide.component';
 import { PersonalProfileComponent } from './components/personal-profile/personal-profile.component';
 import { CarComponent } from './components/car/car.component';
 import { HelpcenterComponent } from './pages/helpcenter/helpcenter.component';
-import { HelpoptionsComponent } from './helpoptions/helpoptions.component';
+import { HelpoptionsComponent } from './components/helpoptions/helpoptions.component';
 import {FormsModule} from '@angular/forms';
 import { RegisterOptionComponent } from './components/register-option/register-option.component';
+import { RegisterSellerComponent } from './components/register-seller/register-seller.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,9 @@ import { RegisterOptionComponent } from './components/register-option/register-o
   
     HelpoptionsComponent,
   
-    RegisterOptionComponent
+    RegisterOptionComponent,
+  
+    RegisterSellerComponent
   ],
   imports: [
     BrowserModule,

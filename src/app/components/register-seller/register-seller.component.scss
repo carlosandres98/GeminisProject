@@ -1,0 +1,55 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: #1e88e5;
+  }
+  
+  .login-logo {
+    width: 40%;
+    align-self: center;
+    padding: 12% 0%;
+  }
+  
+  input {
+    padding: 10px 0;
+    margin-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #1e88e5;
+  }
+  
+  form div{
+    position: relative;
+  }
+  form div label{
+    position: absolute;
+    left: 0;
+    color: #333;
+    top: 10px;
+    transition: .5s;
+    pointer-events: none;
+  }
+  
+  input:focus {
+    top: -12px;
+    left: 0;
+    border-bottom: 2px solid;
+  }
+
+  .btn-register-complement{
+      margin-bottom: 2%;
+  }
+
+  .text-terms-and-conditions-design{
+        margin-top: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+  }
