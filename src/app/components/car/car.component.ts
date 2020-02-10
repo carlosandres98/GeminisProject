@@ -11,6 +11,7 @@ export class CarComponent implements OnInit {
 
   
   public countProducts : number;
+  public countValue : number;
   public CarList : ProductI [] = null;
   constructor(private act:ActivatedRoute, private productService:ProductServiceService) { 
     this.CarList = productService.getCarList();
