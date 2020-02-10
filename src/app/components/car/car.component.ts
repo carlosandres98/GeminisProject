@@ -14,10 +14,11 @@ export class CarComponent implements OnInit {
   public CarList : ProductI [] = null;
   constructor(private act:ActivatedRoute, private productService:ProductServiceService) { 
     this.CarList = productService.getCarList();
+    
   }
 
   ngOnInit() {
-    if(this.CarList==null){
+    if(this.CarList.length==0){
 
     }else{
       this.countProducts = this.CarList.length;
