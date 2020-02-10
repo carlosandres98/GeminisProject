@@ -2,7 +2,7 @@
     <div class="card" style="width: 25rem;">
         <h4 class="text-center m-5">Registro</h4>
         <div class="card-body">
-            <form (ngSubmit)="saveData(form)" #form="ngForm" novalidate="">
+            <form (ngSubmit)="saveData(form)" #form="ngForm">
                 <div>
                     <input type="text" name="" required>
                     <label for="">Nombres</label>
@@ -20,6 +20,7 @@
                     <label for="">Contraseña</label>
                 </div>
                 <button type="submit" class="btn btn-primary full-width" [disabled]="!form.valid" (click)="goRegister()">Registrarme</button>
+                Al registrarme acepto los terminos y condiciónes de Geminis
             </form>
         </div>
     </div>
