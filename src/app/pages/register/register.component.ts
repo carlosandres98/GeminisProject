@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductServiceService, ProductI } from '../../services/product-service.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -15,6 +16,10 @@ export class RegisterComponent implements OnInit {
   }
 
   ngOnInit() {
+
+  }
+
+  saveData(form:NgForm){
 
   }
 
