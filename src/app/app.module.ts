@@ -15,6 +15,9 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { SlideComponent } from './components/slide/slide.component';
 import { PersonalProfileComponent } from './components/personal-profile/personal-profile.component';
 import { CarComponent } from './components/car/car.component';
+import { HelpcenterComponent } from './pages/helpcenter/helpcenter.component';
+import { HelpoptionsComponent } from './helpoptions/helpoptions.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,11 +42,16 @@ import { CarComponent } from './components/car/car.component';
   
     PersonalProfileComponent,
   
-    CarComponent
+    CarComponent,
+  
+    HelpcenterComponent,
+  
+    HelpoptionsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
