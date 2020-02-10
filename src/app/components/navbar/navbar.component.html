@@ -146,6 +146,11 @@
 
 
         <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#" (click)="goCart()">
+                    <img src="assets/icons/cart.svg"  alt="">
+                </a>
+            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -154,6 +159,8 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" (click)="goLogin()">Iniciar sesión</a>
                     <a class="dropdown-item" (click)="goRegister()">Registrarme</a>
+                    <a class="dropdown-item" (click)="goProfile()">Ver perfil</a>
+
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Politicas</a>
                 </div>

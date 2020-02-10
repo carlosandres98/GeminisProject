@@ -20,5 +20,14 @@ export class NavbarComponent implements OnInit {
   goRegister() {
     this.router.navigate(['/register']);
   }
+  
+  goProfile () {
+    this.router.navigate(['/personal-profile']);
+  }
+
+  goCart () {
+    this.router.navigate(['/car']);
+
+  }
 
 }
