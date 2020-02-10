@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductI, ProductServiceService } from '../../services/product-service.service';
 
 @Component({
@@ -12,7 +12,7 @@ export class ProductDetailComponent implements OnInit {
   public productName: string;
   public product: ProductI;
 
-  constructor(private act: ActivatedRoute, private producService: ProductServiceService) {
+  constructor(private act: ActivatedRoute, private producService: ProductServiceService, private rt:Router) {
     act.params.subscribe(data => {
       this.productName = data['product'];
     });
@@ -28,6 +28,12 @@ export class ProductDetailComponent implements OnInit {
     }
 
 
+  }
+
+  goAddToCar(name: string) {
+    this.product = this.producService.getProductByName(name);
+    this.producService.addCarList(this.product);
+    this.rt.navigate(['car']);
   }
 
 }
