@@ -14,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { SlideComponent } from './components/slide/slide.component';
 import { PersonalProfileComponent } from './components/personal-profile/personal-profile.component';
+import { CarComponent } from './components/car/car.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,9 @@ import { PersonalProfileComponent } from './components/personal-profile/personal
   
     SlideComponent,
   
-    PersonalProfileComponent
+    PersonalProfileComponent,
+  
+    CarComponent
   ],
   imports: [
     BrowserModule,
