@@ -13,6 +13,7 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { SlideComponent } from './components/slide/slide.component';
+import { PersonalProfileComponent } from './components/personal-profile/personal-profile.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,9 @@ import { SlideComponent } from './components/slide/slide.component';
   
     ProductDetailComponent,
   
-    SlideComponent
+    SlideComponent,
+  
+    PersonalProfileComponent
   ],
   imports: [
     BrowserModule,
