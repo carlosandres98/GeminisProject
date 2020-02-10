@@ -1,26 +1,30 @@
 <div class="m-5">
     <div>
         <div class="row">
-            <div class="col-md-4 col-xs-12">
-                <h3>{{product.name}}</h3>
-                <hr>
-                <img [src]="product.image" width="370px">
-                <button class="btn btn-outline-primary full-width m-2" routerLink="/dashboard">Atras</button>
-            </div>
-            <div class="col-md-8 col-xs-12">
-                <h3>{{product.name}}</h3>
-                <hr>
-                <h4>Description</h4>
-                <p>{{product.description}}</p>
-                <h4>Precio:</h4>
-                <p>{{product.price}}</p>
-                <div class="row">
-                    <div class="col-6"><button class="btn btn-outline-primary full-width"
-                            (click)="goBuy()">Compar</button></div>
-                    <div class="col-6"><button class="btn btn-outline-primary full-width" (click)="goAddToCar()">Al
-                            carrito</button></div>
+            <div class="card col-md-4 col-xs-12">
+                <div>
+                    <h4 class="m-2">{{product.name}}</h4>
+                    <hr>
+                    <img [src]="product.image" width="270px">
+                    <button class="btn btn-outline-primary full-width m-2" routerLink="/dashboard">Atras</button>
                 </div>
-
+            </div>
+            <div class="col-md-1 m-2"></div>
+            <div class="card col-md-7 col-xs-12">
+                <div class="m-2" >
+                    <h3>{{product.name}}</h3>
+                    <hr>
+                    <h4>Description</h4>
+                    <p>{{product.description}}</p>
+                    <h4>Precio:</h4>
+                    <p>${{product.price}}</p>
+                    <div class="row">
+                        <div class="col-6"><button class="btn btn-outline-primary full-width"
+                                (click)="goBuy()">Compar</button></div>
+                        <div class="col-6"><button class="btn btn-outline-primary full-width" (click)="goAddToCar()">Al
+                                carrito</button></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
