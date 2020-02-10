@@ -68,6 +68,8 @@ export class ProductServiceService {
 
   public carList : ProductI [] = [];
 
+
+
   constructor() {
     this.offertWeekProductList.push(this.productList[0]);
     this.offertWeekProductList.push(this.productList[1]);
@@ -82,6 +84,7 @@ export class ProductServiceService {
   addCarList (product : ProductI){
     this.carList.push(product);
   }
+  getCarList = () => this.carList;
   getoffertWeekProductList = () => this.offertWeekProductList;
   getrecommendedProductList = () => this.recommendedProductList;
 
