@@ -9,21 +9,23 @@
                 <img [src]="product.image" width="220px">
                 <!-- <button class="btn btn-outline-primary full-width m-2" routerLink="/dashboard">Atras</button> -->
             </div>
-            <div id="card" class="col-md-2 col-xs-12"></div>
-            <div class="card col-md-7 col-xs-12">
-                <div class="m-2">
-                    <h3>{{product.name}}</h3>
-                    <hr>
-                    <h4>Description</h4>
-                    <p>{{product.description}}</p>
-                    <h4>Precio:</h4>
-                    <p>${{product.price}}</p>
-                    <div class="row">
-                        <div class="col-6"><button class="btn btn-outline-primary full-width"
-                                (click)="goBuy()">Compar</button></div>
-                        <div class="col-6"><button class="btn btn-outline-primary full-width" (click)="goAddToCar(product.name)"><img src="assets/icons/cart.svg"  alt=""> Añadir al
-                                carrito</button></div>
+        </div>
+        <div id="card" class="col-md-2 col-xs-12"></div>
+        <div class="card col-md-7 col-xs-12">
+            <div class="m-2">
+                <h3>{{product.name}}</h3>
+                <h4 style="color: #007BFF;">${{product.price}}</h4>
+                <hr>
+                <h4>Descripción</h4>
+                <p>{{product.description}}</p>
+                <div class="row">
+                    <div class="col-6">
+                        <button class="btn btn-outline-primary full-width" (click)="goBuy()">Compar</button>
                     </div>
+                    <div class="col-6">
+                        <button class="btn btn-outline-primary full-width" (click)="goAddToCar()">Al carrito</button>
+                    </div>
+                    <div id="card" class="col-md-2 col-xs-12"></div>
                 </div>
             </div>
         </div>

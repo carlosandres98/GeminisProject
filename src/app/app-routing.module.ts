@@ -9,11 +9,13 @@ import { PersonalProfileComponent } from './components/personal-profile/personal
 import { CarComponent } from './components/car/car.component';
 import { HelpcenterComponent } from './pages/helpcenter/helpcenter.component';
 import { RegisterSellerComponent } from './components/register-seller/register-seller.component';
+import { RegisterOptionComponent } from './components/register-option/register-option.component';
 
 
 const routes: Routes = [
   //{path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+  {path: 'register-option', component: RegisterOptionComponent},
   {path: 'login', component: LoginComponent},
   {path: 'car', component: CarComponent},
   {path: 'personal-profile', component: PersonalProfileComponent},
