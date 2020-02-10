@@ -17,6 +17,7 @@ import { PersonalProfileComponent } from './components/personal-profile/personal
 import { CarComponent } from './components/car/car.component';
 import { HelpcenterComponent } from './pages/helpcenter/helpcenter.component';
 import { HelpoptionsComponent } from './helpoptions/helpoptions.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
