@@ -91,67 +91,67 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="#">{{navbar.home}}</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" [routerLink]="['/search',navbar.ropa.category,'']" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    Ropa
+                    {{navbar.ropa.category}}
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Hombre</a>
-                    <a class="dropdown-item" href="#">Mujer</a>
-                    <a class="dropdown-item" href="#">Niños</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.ropa.category,navbar.ropa.hombre]">{{navbar.ropa.hombre}}</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.ropa.category,navbar.ropa.mujer]">{{navbar.ropa.mujer}}</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.ropa.category,navbar.ropa.hombre]">{{navbar.ropa.ninos}}</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" [routerLink]="['/search',navbar.zapatosTenis.category,'']" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    Zapatos y tenis
+                    {{navbar.zapatosTenis.category}}
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Hombre</a>
-                    <a class="dropdown-item" href="#">Mujer</a>
-                    <a class="dropdown-item" href="#">Niños</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.zapatosTenis.category,navbar.zapatosTenis.hombre]">{{navbar.zapatosTenis.hombre}}</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.zapatosTenis.category,navbar.zapatosTenis.mujer]">{{navbar.zapatosTenis.mujer}}</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.zapatosTenis.category,navbar.zapatosTenis.ninos]">{{navbar.zapatosTenis.ninos}}</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" [routerLink]="['/search',navbar.tecnologia.category,'']" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    Tecnología
+                    {{navbar.tecnologia.category}}
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Videojuegos</a>
-                    <a class="dropdown-item" href="#">Computadores</a>
-                    <a class="dropdown-item" href="#">Celulares</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.tecnologia.category,navbar.tecnologia.consola]">{{navbar.tecnologia.consola}}</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.tecnologia.category,navbar.tecnologia.gamesConsoles]">{{navbar.tecnologia.gamesConsoles}}</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.tecnologia.category,navbar.tecnologia.phones]">{{navbar.tecnologia.phones}}</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" [routerLink]="['/search',navbar.electrodomesticos.category,'']" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    Electródomesticos
+                    {{navbar.electrodomesticos.category}}
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Televisores</a>
-                    <a class="dropdown-item" href="#">Lavadoras</a>
-                    <a class="dropdown-item" href="#">Secadoras</a>
-                    <a class="dropdown-item" href="#">Neveras</a>
-                    <a class="dropdown-item" href="#">Equipos de sonido</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.electrodomesticos.category,navbar.electrodomesticos.tv]">{{navbar.electrodomesticos.tv}}</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.electrodomesticos.category,navbar.electrodomesticos.lavadora]">{{navbar.electrodomesticos.lavadora}}</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.electrodomesticos.category,navbar.electrodomesticos.secadora]">{{navbar.electrodomesticos.secadora}}</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.electrodomesticos.category,navbar.electrodomesticos.nevera]">{{navbar.electrodomesticos.nevera}}</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.electrodomesticos.category,navbar.electrodomesticos.equipoSonido]">{{navbar.electrodomesticos.equipoSonido}}</a>
                 </div>
             </li>
 
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" [routerLink]="['/search',navbar.muebles.category,'']" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    Muebles
+                    {{navbar.muebles.category}}
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Sofas</a>
-                    <a class="dropdown-item" href="#">Juegos de sala</a>
-                    <a class="dropdown-item" href="#">Comedores</a>
-                    <a class="dropdown-item" href="#">Sillas</a>
-                    <a class="dropdown-item" href="#">Escritorios</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.muebles.category,navbar.muebles.sofa]">{{navbar.muebles.sofa}}</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.muebles.category,navbar.muebles.gameSalas]">{{navbar.muebles.gameSalas}}</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.muebles.category,navbar.muebles.comedor]">{{navbar.muebles.comedor}}</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.muebles.category,navbar.muebles.silla]">{{navbar.muebles.silla}}</a>
+                    <a class="dropdown-item" [routerLink]="['/search',navbar.muebles.category,navbar.muebles.escritorio]">{{navbar.muebles.escritorio}}</a>
                 </div>
             </li>
 

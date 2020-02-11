@@ -20,6 +20,7 @@ import { HelpoptionsComponent } from './components/helpoptions/helpoptions.compo
 import {FormsModule} from '@angular/forms';
 import { RegisterOptionComponent } from './components/register-option/register-option.component';
 import { RegisterSellerComponent } from './components/register-seller/register-seller.component';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,9 @@ import { RegisterSellerComponent } from './components/register-seller/register-s
   
     RegisterOptionComponent,
   
-    RegisterSellerComponent
+    RegisterSellerComponent,
+  
+    SearchComponent
   ],
   imports: [
     BrowserModule,

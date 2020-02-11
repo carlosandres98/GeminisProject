@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,6 +10,51 @@ export class NavbarComponent implements OnInit {
 
   constructor(private router: Router) { }
 
+  @Input() Category: any;
+  @Input() subCategory: any;
+
+
+  public navbar: any = {
+    home: 'Home',
+    ropa: {
+      category: 'Ropa',
+      hombre: 'Hombre',
+      mujer: 'Mujer',
+      ninos: 'Niños'
+    },
+    zapatosTenis: {
+      category: 'Zapatos y Tenis',
+      hombre: 'Hombre',
+      mujer: 'Mujer',
+      ninos: 'Niños'
+    },
+    tecnologia: {
+      category: 'Tecnología',
+      consola: 'Consolas',
+      gamesConsoles: 'Juegos para consolas',
+      phones: 'Celulares'
+    },
+    electrodomesticos: {
+      category: 'Electródomestico',
+      tv: 'Televisores',
+      lavadora: 'Lavadoras',
+      secadora: 'Secadoras',
+      nevera: 'Neveras',
+      equipoSonido: 'Equipos de sonido'
+    },
+    muebles: {
+      category: 'Muebles',
+      sofa: 'Sofas',
+      gameSalas: 'Juegos de salas',
+      comedor: 'Comedores',
+      silla: 'sillas',
+      escritorio: 'Escritorios'
+    },
+    help: '¿Necesitas ayuda?'
+  }
+
+
+
   ngOnInit() {
   }
 
@@ -20,12 +65,12 @@ export class NavbarComponent implements OnInit {
   goRegister() {
     this.router.navigate(['/register']);
   }
-  
-  goProfile () {
+
+  goProfile() {
     this.router.navigate(['/personal-profile']);
   }
 
-  goCart () {
+  goCart() {
     this.router.navigate(['/car']);
 
   }

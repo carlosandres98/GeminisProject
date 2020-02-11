@@ -74,6 +74,8 @@ export class ProductServiceService {
 
   ];
 
+  public productListByCategory: ProductI[] = [];
+
 
   public offertWeekProductList: ProductI[] = [
 
@@ -103,12 +105,15 @@ export class ProductServiceService {
   getCarList = () => this.carList;
   getoffertWeekProductList = () => this.offertWeekProductList;
   getrecommendedProductList = () => this.recommendedProductList;
+  getProductByCategoryList = () => this.productListByCategory;
 
   getProductByCategory = (category: string) => {
     let productFind: ProductI;
     for (let product of this.productList) {
+
       if (product.category == category) {
         productFind = product;
+        this.productListByCategory.push(productFind);
         break;
       } else {
         productFind = null;
@@ -120,7 +125,7 @@ export class ProductServiceService {
   getProductByCategorySub = (category: string, subCategory: string) => {
     let productFind: ProductI;
     for (let product of this.productList) {
-      if (product.name == category && product.subcategory==subCategory) {
+      if (product.name == category && product.subcategory == subCategory) {
         productFind = product;
         break;
       } else {
