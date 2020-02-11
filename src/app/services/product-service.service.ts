@@ -11,49 +11,65 @@ export class ProductServiceService {
       name: 'Saco de invierno',
       image: 'assets/img/products/jacket.png',
       price: 150000,
-      description : 'It is a long established fact that a reader will be distracted by the readable content of a page when'
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: '',
+      subcategory: ''
     },
     {
       name: 'Maleta KANKEN',
       image: 'assets/img/products/backpack.png',
       price: 85000,
-      description : 'It is a long established fact that a reader will be distracted by the readable content of a page when'
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: '',
+      subcategory: ''
     },
     {
       name: 'Smart Watch Negro',
       image: 'assets/img/products/smartwatch.png',
       price: 750000,
-      description : 'It is a long established fact that a reader will be distracted by the readable content of a page when'
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: '',
+      subcategory: ''
     },
     {
       name: 'Audifonos BOSE XD-456',
       image: 'assets/img/products/headphones.png',
       price: 1567000,
-      description : 'It is a long established fact that a reader will be distracted by the readable content of a page when'
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: '',
+      subcategory: ''
     },
     {
       name: 'Mueble Sofa',
       image: 'assets/img/products/sofa.png',
       price: 54000,
-      description : 'It is a long established fact that a reader will be distracted by the readable content of a page when'
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: '',
+      subcategory: '',
     },
     {
       name: 'Camisa Polo',
       image: 'assets/img/products/shirt.png',
       price: 45000,
-      description : 'It is a long established fact that a reader will be distracted by the readable content of a page when'
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: '',
+      subcategory: ''
     },
     {
       name: 'Billetera de Cuero',
       image: 'assets/img/products/wallet.png',
       price: 64000,
-      description : 'It is a long established fact that a reader will be distracted by the readable content of a page when'
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: '',
+      subcategory: ''
     },
     {
       name: 'Jean Azul',
       image: 'assets/img/products/pants.png',
       price: 98000,
-      description : 'It is a long established fact that a reader will be distracted by the readable content of a page when'
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: '',
+      subcategory: ''
     }
 
   ];
@@ -66,7 +82,7 @@ export class ProductServiceService {
 
   ];
 
-  public carList : ProductI [] = [];
+  public carList: ProductI[] = [];
 
 
 
@@ -81,12 +97,38 @@ export class ProductServiceService {
     this.recommendedProductList.push(this.productList[7]);
   }
 
-  addCarList (product : ProductI){
+  addCarList(product: ProductI) {
     this.carList.push(product);
   }
   getCarList = () => this.carList;
   getoffertWeekProductList = () => this.offertWeekProductList;
   getrecommendedProductList = () => this.recommendedProductList;
+
+  getProductByCategory = (category: string) => {
+    let productFind: ProductI;
+    for (let product of this.productList) {
+      if (product.category == category) {
+        productFind = product;
+        break;
+      } else {
+        productFind = null;
+      }
+    }
+    return productFind;
+  };
+
+  getProductByCategorySub = (category: string, subCategory: string) => {
+    let productFind: ProductI;
+    for (let product of this.productList) {
+      if (product.name == category && product.subcategory==subCategory) {
+        productFind = product;
+        break;
+      } else {
+        productFind = null;
+      }
+    }
+    return productFind;
+  };
 
   getProductByName = (productName: string) => {
     let productFind: ProductI;
@@ -94,7 +136,7 @@ export class ProductServiceService {
       if (product.name == productName) {
         productFind = product;
         break;
-      }else{
+      } else {
         productFind = null;
       }
     }
@@ -107,7 +149,7 @@ export interface ProductI {
   image: string;
   name: string;
   price: number;
-  description : string;
+  description: string;
   category: string;
   subcategory: string;
 }
