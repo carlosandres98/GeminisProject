@@ -108,4 +108,6 @@ export interface ProductI {
   name: string;
   price: number;
   description : string;
+  category: string;
+  subcategory: string;
 }
