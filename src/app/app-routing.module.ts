@@ -25,6 +25,7 @@ const routes: Routes = [
   {path: 'dashboard', component: DashboardComponent},
   {path: '*', component: LoginComponent},
   {path: 'helpcenter', component: HelpcenterComponent},
+  {path : '**' , redirectTo : 'dashboard'},
   {path: 'register-seller', component: RegisterSellerComponent}
 
 
