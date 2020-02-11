@@ -10,14 +10,15 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class SearchComponent implements OnInit {
 
-  public productByCategory: ProductI[];
+  public product: ProductI[];
+  public productByCategorySub: ProductI[];
   public title: string = 'Categorias:'
-  constructor(private productService:ProductServiceService, private act:ActivatedRoute) { 
-    this.productByCategory = productService.getoffertWeekProductList();
-    this.act.params.subscribe (par=>{
-      console.log(par['category']);
-      console.log(par['subCategory']);
-      
+  constructor(private productService: ProductServiceService, private act: ActivatedRoute) {
+
+    this.act.params.subscribe(par => {
+      productService.getProductByCategory(par['category']);
+      this.productByCategorySub = null;
+      this.productByCategorySub = productService.getProductByCategoryList();
     })
   }
 

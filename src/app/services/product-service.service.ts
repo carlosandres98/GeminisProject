@@ -12,24 +12,24 @@ export class ProductServiceService {
       image: 'assets/img/products/jacket.png',
       price: 150000,
       description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
-      category: '',
-      subcategory: ''
+      category: 'Ropa',
+      subcategory: 'Niños'
     },
     {
       name: 'Maleta KANKEN',
       image: 'assets/img/products/backpack.png',
       price: 85000,
       description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
-      category: '',
-      subcategory: ''
+      category: 'Ropa',
+      subcategory: 'Mujer'
     },
     {
       name: 'Smart Watch Negro',
       image: 'assets/img/products/smartwatch.png',
       price: 750000,
       description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
-      category: '',
-      subcategory: ''
+      category: 'Ropa',
+      subcategory: 'Mujer'
     },
     {
       name: 'Audifonos BOSE XD-456',
@@ -44,37 +44,38 @@ export class ProductServiceService {
       image: 'assets/img/products/sofa.png',
       price: 54000,
       description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
-      category: '',
-      subcategory: '',
+      category: 'Ropa',
+      subcategory: 'Hombre',
     },
     {
       name: 'Camisa Polo',
       image: 'assets/img/products/shirt.png',
       price: 45000,
       description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
-      category: '',
-      subcategory: ''
+      category: 'Ropa',
+      subcategory: 'Niños'
     },
     {
       name: 'Billetera de Cuero',
       image: 'assets/img/products/wallet.png',
       price: 64000,
       description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
-      category: '',
-      subcategory: ''
+      category: 'Tecnología',
+      subcategory: 'Consolas'
     },
     {
       name: 'Jean Azul',
       image: 'assets/img/products/pants.png',
       price: 98000,
       description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
-      category: '',
-      subcategory: ''
+      category: 'Tecnología',
+      subcategory: 'Consolas'
     }
 
   ];
 
   public productListByCategory: ProductI[] = [];
+  public productListByCategorySub: ProductI[] = [];
 
 
   public offertWeekProductList: ProductI[] = [
@@ -106,6 +107,7 @@ export class ProductServiceService {
   getoffertWeekProductList = () => this.offertWeekProductList;
   getrecommendedProductList = () => this.recommendedProductList;
   getProductByCategoryList = () => this.productListByCategory;
+  getProductByCategorySubList = () => this.productListByCategory;
 
   getProductByCategory = (category: string) => {
     let productFind: ProductI;
@@ -114,9 +116,9 @@ export class ProductServiceService {
       if (product.category == category) {
         productFind = product;
         this.productListByCategory.push(productFind);
-        break;
+
       } else {
-        productFind = null;
+
       }
     }
     return productFind;
@@ -127,9 +129,10 @@ export class ProductServiceService {
     for (let product of this.productList) {
       if (product.name == category && product.subcategory == subCategory) {
         productFind = product;
-        break;
+        this.productListByCategorySub.push(productFind);
+        
       } else {
-        productFind = null;
+        
       }
     }
     return productFind;
