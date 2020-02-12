@@ -33,7 +33,7 @@ export class ProductServiceService {
     },
     {
       name: 'Audifonos BOSE XD-456',
-      image: 'assets/img/products/Bitmap-3.png',
+      image: 'assets/img/products/headphones.png',
       price: 1567000,
       description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
       category: 'Tecnología',
@@ -379,7 +379,7 @@ export class ProductServiceService {
   getoffertWeekProductList = () => this.offertWeekProductList;
   getrecommendedProductList = () => this.recommendedProductList;
   getProductByCategoryList = () => this.productListByCategory;
-  getProductByCategorySubList = () => this.productListByCategory;
+  getProductByCategorySubList = () => this.productListByCategorySub;
 
   getProductByCategory = (category: string) => {
     this.productListByCategory = [];
@@ -398,9 +398,10 @@ export class ProductServiceService {
   };
 
   getProductByCategorySub = (category: string, subCategory: string) => {
+    this.productListByCategorySub = [];
     let productFind: ProductI;
     for (let product of this.productList) {
-      if (product.name == category && product.subcategory == subCategory) {
+      if (product.category == category && product.subcategory == subCategory) {
         productFind = product;
         this.productListByCategorySub.push(productFind);
         

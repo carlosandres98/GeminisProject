@@ -11,14 +11,18 @@ import { ActivatedRoute } from '@angular/router';
 export class SearchComponent implements OnInit {
 
   public product: ProductI[];
+  public productByCategory: ProductI[];
   public productByCategorySub: ProductI[];
   public title: string ;
   constructor(private productService: ProductServiceService, private act: ActivatedRoute) {
 
     this.act.params.subscribe(par => {
       productService.getProductByCategory(par['category']);
-      this.title = `Categoria: ${par['category']}`
-      this.productByCategorySub = productService.getProductByCategoryList();
+      productService.getProductByCategorySub(par['category'],par['subCategory']);
+      this.title = `Categoria: ${par['category']} > ${par['subCategory']}`
+      this.productByCategory = productService.getProductByCategoryList();
+      this.productByCategorySub = productService.getProductByCategorySubList();
+      console.log(this.productByCategorySub);
     })
   }
 
