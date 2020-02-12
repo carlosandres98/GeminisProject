@@ -25,6 +25,6 @@ export class ProductCardComponent implements OnInit {
   goAddToCar(name: string) {
     this.product = this.productService.getProductByName(name);
     this.productService.addCarList(this.product);
-    this.rt.navigate(['car']);
+    this.rt.navigate(['/car']);
   }
 }
