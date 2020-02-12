@@ -12,11 +12,12 @@ export class SearchComponent implements OnInit {
 
   public product: ProductI[];
   public productByCategorySub: ProductI[];
-  public title: string = 'Categorias:'
+  public title: string ;
   constructor(private productService: ProductServiceService, private act: ActivatedRoute) {
 
     this.act.params.subscribe(par => {
       productService.getProductByCategory(par['category']);
+      this.title = `Categoria: ${par['category']}`
       this.productByCategorySub = productService.getProductByCategoryList();
     })
   }

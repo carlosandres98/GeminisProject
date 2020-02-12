@@ -13,7 +13,7 @@ export class ProductServiceService {
       price: 150000,
       description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
       category: 'Ropa',
-      subcategory: 'Niños'
+      subcategory: 'Hombre'
     },
     {
       name: 'Maleta KANKEN',
@@ -21,22 +21,22 @@ export class ProductServiceService {
       price: 85000,
       description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
       category: 'Ropa',
-      subcategory: 'Mujer'
+      subcategory: ''
     },
     {
       name: 'Smart Watch Negro',
       image: 'assets/img/products/smartwatch.png',
       price: 750000,
       description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
-      category: 'Ropa',
-      subcategory: 'Mujer'
+      category: 'Tecnología',
+      subcategory: ''
     },
     {
       name: 'Audifonos BOSE XD-456',
-      image: 'assets/img/products/headphones.png',
+      image: 'assets/img/products/Bitmap-3.png',
       price: 1567000,
       description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
-      category: '',
+      category: 'Tecnología',
       subcategory: ''
     },
     {
@@ -44,8 +44,8 @@ export class ProductServiceService {
       image: 'assets/img/products/sofa.png',
       price: 54000,
       description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
-      category: 'Ropa',
-      subcategory: 'Hombre',
+      category: 'Muebles',
+      subcategory: 'Sofas',
     },
     {
       name: 'Camisa Polo',
@@ -53,23 +53,295 @@ export class ProductServiceService {
       price: 45000,
       description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
       category: 'Ropa',
-      subcategory: 'Niños'
+      subcategory: 'Hombre'
     },
     {
       name: 'Billetera de Cuero',
       image: 'assets/img/products/wallet.png',
       price: 64000,
       description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
-      category: 'Tecnología',
-      subcategory: 'Consolas'
+      category: 'Ropa',
+      subcategory: ''
     },
     {
       name: 'Jean Azul',
       image: 'assets/img/products/pants.png',
       price: 98000,
       description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/pants.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Ropa',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/tecnologia01.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
       category: 'Tecnología',
       subcategory: 'Consolas'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/tecnologia02.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Tecnología',
+      subcategory: 'Consolas'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/tecnologia03.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Tecnología',
+      subcategory: 'Consolas'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/tecnologia04.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Tecnología',
+      subcategory: 'Juegos para consolas'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/tecnologia05.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Tecnología',
+      subcategory: 'Juegos para consolas'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/tecnologia06.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Tecnología',
+      subcategory: 'Juegos para consolas'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/tecnologia07.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Tecnología',
+      subcategory: 'Celulares'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/tecnologia08.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Tecnología',
+      subcategory: 'Celulares'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/tecnologia09.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Tecnología',
+      subcategory: 'Celulares'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/zapato01.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Zapatos y Tenis',
+      subcategory: 'Niños'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/zapato02.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Zapatos y Tenis',
+      subcategory: 'Niños'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/zapato03.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Zapatos y Tenis',
+      subcategory: 'Hombre'
+    },
+    {
+      name: 'Jean Azul',
+      image: 'assets/img/products/zapato04.png',
+      price: 98000,
+      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
+      category: 'Zapatos y Tenis',
+      subcategory: 'Mujer'
     }
 
   ];
