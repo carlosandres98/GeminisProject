@@ -32,8 +32,8 @@ export class ProductServiceService {
       subcategory: ''
     },
     {
-      name: 'Audifonos BOSE XD-456',
-      image: 'assets/img/products/Bitmap-3.png',
+      name: 'Audifonos BOSE',
+      image: 'assets/img/products/headphones.png',
       price: 1567000,
       description: 'It is a long established fact that a reader will be distracted by the readable content of a page when',
       category: 'Tecnología',
