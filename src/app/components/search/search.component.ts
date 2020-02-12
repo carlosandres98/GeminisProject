@@ -17,12 +17,12 @@ export class SearchComponent implements OnInit {
 
     this.act.params.subscribe(par => {
       productService.getProductByCategory(par['category']);
-      this.productByCategorySub = null;
       this.productByCategorySub = productService.getProductByCategoryList();
     })
   }
 
   ngOnInit() {
+    
   }
 
 }

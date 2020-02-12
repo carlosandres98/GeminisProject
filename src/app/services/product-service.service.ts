@@ -110,6 +110,7 @@ export class ProductServiceService {
   getProductByCategorySubList = () => this.productListByCategory;
 
   getProductByCategory = (category: string) => {
+    this.productListByCategory = [];
     let productFind: ProductI;
     for (let product of this.productList) {
 
