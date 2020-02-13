@@ -336,12 +336,28 @@ export class ProductServiceService {
       subcategory: 'Hombre'
     },
     {
-      name: 'Zapatos Tenis Para Dama - Tonos dorados',
-      image: 'assets/img/products/zapato04.png',
-      price: 75000,
+      name: 'Secadora 3V - Rosada',
+      image: 'assets/img/products/Secador01.png',
+      price: 70000,
       description: 'Tenis para Dama Talla 35 al 40',
-      category: 'Zapatos y Tenis',
-      subcategory: 'Mujer'
+      category: 'Electródomestico',
+      subcategory: 'Secadoras'
+    },
+    {
+      name: 'Secadora 4V - Rosada',
+      image: 'assets/img/products/Secador02.png',
+      price: 79000,
+      description: 'Tenis para Dama Talla 35 al 40',
+      category: 'Electródomestico',
+      subcategory: 'Secadoras'
+    },
+    {
+      name: 'Secadora 6V - Negra',
+      image: 'assets/img/products/Secador03.png',
+      price: 89599,
+      description: 'Tenis para Dama Talla 35 al 40',
+      category: 'Electródomestico',
+      subcategory: 'Secadoras'
     }
 
   ];
