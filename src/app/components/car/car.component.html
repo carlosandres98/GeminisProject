@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<div>
+<div style="width: 95%;">
     <div *ngIf="CarList.length==0" class="col-md-6 col-xs-12">
         <h3 class="title-text-design">No tienes productos aún</h3>
     </div>
@@ -7,7 +7,7 @@
         <h3 class="title-text-design">Tienes: {{countProducts}} Productos</h3>
     </div>
     <div class="row" id="btn-agregar-mas">
-        <div class="col-4">
+        <div>
             <button type="submit" class="btn btn-outline-primary full-width" routerLink="/dashboard">Agregar más
                 productos</button>
         </div>
