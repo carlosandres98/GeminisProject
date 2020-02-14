@@ -24,6 +24,7 @@ import { SearchComponent } from './components/search/search.component';
 import { RecoverpasswordComponent } from './pages/recoverpassword/recoverpassword.component';
 import { ConfirmpasswordComponent } from './pages/confirmpassword/confirmpassword.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
