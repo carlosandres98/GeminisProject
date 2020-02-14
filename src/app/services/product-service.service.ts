@@ -5,7 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class ProductServiceService {
 
-
   public productList: ProductI[] = [
     {
       name: 'Saco de invierno',
@@ -450,4 +449,4 @@ export interface ProductI {
   description: string;
   category: string;
   subcategory: string;
-}
+};
