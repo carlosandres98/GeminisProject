@@ -13,6 +13,10 @@
         </div>
     </div>
 </div>
-<ul class="list-group">
-    <li *ngFor="let product of CarList" class="list-group-item">{{product.name}}<br><img [src]="product.image" width="120px"><br>${{product.price}}</li>
-</ul>
+
+<div *ngFor="let product of CarList" class="card m-3">
+    <div class="card-title" style="color: blue;">{{product.name}}</div>
+    <div class="card-body">
+        <img [src]="product.image" width="120px">
+    </div>
+</div>
