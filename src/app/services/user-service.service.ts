@@ -10,23 +10,23 @@ export class UserServiceService {
     {
       names: 'Carlos Andés',
       lastnames: 'Montoya Cardona',
-      email: 'Camc@Inso.com',
-      password: '10987651234',
-      confirmpass: '10987651234'
+      email: 'camc@inso.com',
+      password: '123',
+      confirmpass: '123'
     },
     {
-      names: '',
+      names: 'Mateo',
       lastnames: 'Orozco Lotero',
       email: 'mol@inso.com',
       password: '123',
-      confirmpass: '10987651234'
+      confirmpass: '123'
     },
     {
       names: 'Santiago',
       lastnames: 'Santiago Agudelo Hernándes',
-      email: 'SAH@Inso.com',
-      password: '10987651234',
-      confirmpass: '10987651234'
+      email: 'sah@inso.com',
+      password: '123',
+      confirmpass: '123'
     }
   ];
 
@@ -43,7 +43,7 @@ export class UserServiceService {
         userDB = null;
       }
     }
-    return userDB
+    return userDB;
   }
 
   constructor() {
