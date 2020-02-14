@@ -21,6 +21,8 @@ import {FormsModule} from '@angular/forms';
 import { RegisterOptionComponent } from './components/register-option/register-option.component';
 import { RegisterSellerComponent } from './components/register-seller/register-seller.component';
 import { SearchComponent } from './components/search/search.component';
+import { RecoverpasswordComponent } from './pages/recoverpassword/recoverpassword.component';
+import { ConfirmpasswordComponent } from './pages/confirmpassword/confirmpassword.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,11 @@ import { SearchComponent } from './components/search/search.component';
   
     RegisterSellerComponent,
   
-    SearchComponent
+    SearchComponent,
+  
+    RecoverpasswordComponent,
+  
+    ConfirmpasswordComponent
   ],
   imports: [
     BrowserModule,
