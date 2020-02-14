@@ -1,25 +1,30 @@
 <div class="wrapper">
-    <div class="card" style="width: 25rem;">
-        <h4 class="text-center m-5">Registro</h4>
+    <div class="card col-lg-4 col-md-6 col-sm-8 col-xs-12">
         <div class="card-body">
-            <form (ngSubmit)="saveData(form)" #form="ngForm">
-                <div>
-                    <input type="text" name="" required>
-                    <label for="">Nombres</label>
+            <h5 class="card-title">Registro</h5>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nombres</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
-                <div>
-                    <input type="text" name="" required>
-                    <label for="">Apellidos</label>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Apellidos</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <div>
-                    <input type="email" name="" required>
-                    <label for="">Correo</label>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Correo electrónico</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <div>
-                    <input type="password" name="" required>
-                    <label for="">Contraseña</label>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <button type="submit" class="btn btn-primary full-width" [disabled]="!form.valid" (click)="goRegister()">Registrarme</button>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Confirmar contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary full-width" [disabled]="!form.valid"
+                    (click)="goRegister()">Registrarme</button>
                 Al registrarme acepto los terminos y condiciónes de Geminis
             </form>
         </div>
