@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
+import { UserServiceService, usersDBI } from '../../services/user-service.service';
 
 @Component({
   selector: 'app-login',
@@ -9,24 +10,38 @@ import { NgForm } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
+  access: boolean = true;
+  userD: usersDBI;
+  validLogin = true;
+
   userDB: userI = {
-    email: '',
-    password: ''
+    txtEmail: '',
+    txtPassword: ''
   };
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private userSevice: UserServiceService) {
+
+  }
 
   ngOnInit() {
   }
 
   goLogin(formData: NgForm) {
+    this.access = true;
     this.userDB = formData.value;
-    console.log(this.userDB);
+    this.userD = this.userSevice.login(this.userDB.txtEmail, this.userDB.txtPassword);
+
+    if (this.userD) {
+      this.router.navigate(['/dashboard']);
+    } else {
+      this.access = false;
+    }
+
   }
 
   goRegister() {
     this.router.navigate(['register']);
-    this.router.navigate(['dashboard']);
+
   }
 
   goRecover() {
@@ -36,6 +51,6 @@ export class LoginComponent implements OnInit {
 }
 
 export interface userI {
-  email: string;
-  password: string;
+  txtEmail: string;
+  txtPassword: string;
 }

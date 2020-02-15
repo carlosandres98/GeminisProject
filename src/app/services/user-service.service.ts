@@ -5,46 +5,50 @@ import { Injectable } from '@angular/core';
 })
 export class UserServiceService {
 
+
   public usersDB: usersDBI[] = [
     {
       names: 'Carlos Andés',
       lastnames: 'Montoya Cardona',
-      email: 'Camc@Inso.com',
-      password: '10987651234',
-      confirmpass: '10987651234'
+      email: 'camc@inso.com',
+      password: '123',
+      confirmpass: '123'
     },
     {
-      names: '',
+      names: 'Mateo',
       lastnames: 'Orozco Lotero',
-      email: 'Mol@Inso.com',
-      password: '10987651234',
-      confirmpass: '10987651234'
+      email: 'mol@inso.com',
+      password: '123',
+      confirmpass: '123'
     },
     {
       names: 'Santiago',
       lastnames: 'Santiago Agudelo Hernándes',
-      email: 'SAH@Inso.com',
-      password: '10987651234',
-      confirmpass: '10987651234'
+      email: 'sah@inso.com',
+      password: '123',
+      confirmpass: '123'
     }
   ];
 
   getUsersList = () => this.usersDB;
 
   login = (email: string, password: string) => {
-    let access = false;
-    for(let user of this.usersDB){
-      if(user.email == email && user.password==password){
-        access = true;
+    let userDB: usersDBI;
+    for (let user of this.usersDB) {
+      
+      if (user.email == email && user.password == password) {
+        userDB = user;
         break;
-      }else{
-        access = false;
+      } else {
+        userDB = null;
       }
     }
-    return access;
+    return userDB;
   }
 
-  constructor() { }
+  constructor() {
+    this.usersDB = this.getUsersList();
+  }
 }
 export interface usersDBI {
   names: string;
