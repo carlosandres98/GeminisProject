@@ -33,7 +33,7 @@ export class ProductDetailComponent implements OnInit {
   goAddToCar(name: string) {
     this.product = this.producService.getProductByName(name);
     this.producService.addCarList(this.product);
-    this.rt.navigate(['car']);
+    this.rt.navigate(['/car']);
   }
 
 }
