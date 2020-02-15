@@ -14,6 +14,8 @@
             <div class="card-title m-2" style="color: blue;"><h2 class="text-center">Precio: ${{product.price}}</h2></div>
             <div class="card-body centrar">
                 <img class="m-3 centrar" [src]="product.image" width="170px">
+                <button class="btn btn-outline-primary full-width" (click)="deleteProduct(product)">Eliminar producto</button>
+                    
             </div>
         </div>
     </div>
@@ -22,6 +24,7 @@
             <div class="card-title">
                 <div *ngIf="CarList.length!=0" class="m-2">
                     <h3>Tienes: {{countProducts}} Productos</h3>
+                    <h4 style="color: blue;">Pagar: ${{totalPay}} </h4>
                 </div>
             </div>
             <div class="card-title">
