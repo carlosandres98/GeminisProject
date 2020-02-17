@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
     this.userD = this.userSevice.login(this.userDB.txtEmail, this.userDB.txtPassword);
 
     if (this.userD) {
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['/switch-seller']);
     } else {
       this.access = false;
     }

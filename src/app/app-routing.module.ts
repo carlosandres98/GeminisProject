@@ -13,11 +13,13 @@ import { RegisterOptionComponent } from './components/register-option/register-o
 import { SearchComponent } from './components/search/search.component';
 import { RecoverpasswordComponent } from './pages/recoverpassword/recoverpassword.component';
 import { ConfirmpasswordComponent } from './pages/confirmpassword/confirmpassword.component';
+import { SwitchSellerComponent } from './components/switch-seller/switch-seller.component';
 
 
 const routes: Routes = [
   //{path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+  {path: 'switch-seller', component: SwitchSellerComponent},
   {path: 'register-option', component: RegisterOptionComponent},
   {path: 'search/:category/:subCategory', component: SearchComponent},
   {path: 'login', component: LoginComponent},

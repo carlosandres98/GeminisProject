@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -23,6 +24,7 @@ import { RegisterSellerComponent } from './components/register-seller/register-s
 import { SearchComponent } from './components/search/search.component';
 import { RecoverpasswordComponent } from './pages/recoverpassword/recoverpassword.component';
 import { ConfirmpasswordComponent } from './pages/confirmpassword/confirmpassword.component';
+import { SwitchSellerComponent } from './components/switch-seller/switch-seller.component';
 
 
 @NgModule({
@@ -62,7 +64,9 @@ import { ConfirmpasswordComponent } from './pages/confirmpassword/confirmpasswor
   
     RecoverpasswordComponent,
   
-    ConfirmpasswordComponent
+    ConfirmpasswordComponent,
+  
+    SwitchSellerComponent
   ],
   imports: [
     BrowserModule,
