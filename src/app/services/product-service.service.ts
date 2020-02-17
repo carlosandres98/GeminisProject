@@ -328,6 +328,14 @@ export class ProductServiceService {
     },
     {
       name: 'Zapato Elegante 100% Cuero',
+      image: 'assets/img/products/zapato04.png',
+      price: 73000,
+      description: 'Zapato formal para mujer, elaborados en puro cuero, suela de caucho, Nuestros productos son de fabricación nacional, en materiales de excelente calidad',
+      category: 'Zapatos y Tenis',
+      subcategory: 'Mujer'
+    },
+    {
+      name: 'Zapato Elegante 100% Cuero',
       image: 'assets/img/products/zapato03.png',
       price: 58000,
       description: 'Zapato formal para hombre, elaborados en puro cuero, suela de caucho, Nuestros productos son de fabricación nacional, en materiales de excelente calidad',
