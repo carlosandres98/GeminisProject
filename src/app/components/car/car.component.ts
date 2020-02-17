@@ -11,6 +11,7 @@ export class CarComponent implements OnInit {
 
   
   public countProducts : number;
+  public totalPay : number;
   
   
   public CarList : ProductI [] = null;
@@ -23,6 +24,7 @@ export class CarComponent implements OnInit {
 
     }else{
       this.countProducts = this.CarList.length;
+      this.totalPay = this.productService.getCarProductPrice();
     }
   }
 
@@ -30,6 +32,7 @@ export class CarComponent implements OnInit {
     let index = this.CarList.indexOf(product);
     this.CarList.splice(index,1);
     this.countProducts = this.CarList.length;
+    this.totalPay = this.productService.getCarProductPrice();
   }
 
 }

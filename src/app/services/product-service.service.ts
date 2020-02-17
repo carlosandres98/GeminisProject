@@ -382,6 +382,7 @@ export class ProductServiceService {
 
   public carList: ProductI[] = [];
 
+  public productPrice : number;
 
 
   constructor() {
@@ -398,6 +399,16 @@ export class ProductServiceService {
   addCarList(product: ProductI) {
     this.carList.push(product);
   }
+
+  getCarProductPrice = () => {
+    let countPrice : number = 0 ;
+    for (let product of this.carList){
+      countPrice = countPrice + product.price;
+    }
+
+    return countPrice;
+  }
+
   getCarList = () => this.carList;
   getoffertWeekProductList = () => this.offertWeekProductList;
   getrecommendedProductList = () => this.recommendedProductList;
