@@ -13,19 +13,17 @@
                     </div>
                     <div style="text-align: center; justify-content: center;">
                         <div class="m-2">
-                            <button class="mdc-button btn btn-outline-primary full-width"
+                            <button class="mdc-button btn btn-outline-primary full-width btn-size-container"
                                 (click)="goAddToCar(product.name)">
-                                <img src="assets/icons/shopping-cart.png" width="32px">
-                                <i class="card-design-img-button"
-                                    aria-hidden="true"></i>
-                                <span>Al Carrito</span>
+                                <i class="material-icons mdc-button__icon card-design-img-button"
+                                    aria-hidden="true">shopping_cart</i>
+                                <span>Al carrito</span>
                             </button>
                         </div>
                         <div class="m-2">
-                            <button class="mdc-button btn btn-outline-primary full-width" (click)="goBuy()">
-                                <img src="assets/icons/shopper.png" width="32px">
-                                <i class=" card-design-img-button"
-                                    aria-hidden="true"></i>
+                            <button class="mdc-button btn btn-primary full-width btn-size-container" (click)="goBuy()">
+                                <i class="material-icons mdc-button__icon card-design-img-button"
+                                    aria-hidden="true">shopping_basket</i>
                                 <span>Comprar</span>
                             </button>
                         </div>
