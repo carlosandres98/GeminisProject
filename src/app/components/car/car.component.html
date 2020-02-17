@@ -1,12 +1,11 @@
 <app-navbar></app-navbar>
-
-<div class="row">
-    <div class="col-xl-12 m-3">
-        <button type="submit" class="btn btn-outline-primary full-width" routerLink="/dashboard">Agregar más
-            productos</button>
-    </div>
-</div>
-
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12 m-3">
+            <button type="submit" class="btn btn-outline-primary full-width" routerLink="/dashboard">Agregar más
+                productos</button>
+        </div>
+    </div>     
 <div class="row">
     <div class="col-lg-6 col-xl-8">
         <div *ngFor="let product of CarList" class="card m-3">
@@ -41,4 +40,6 @@
             </div>
         </div>
     </div>
+</div>
+     
 </div>
