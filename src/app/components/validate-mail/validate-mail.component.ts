@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-validate-mail',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ValidateMailComponent implements OnInit {
 
-  constructor() { }
+  public mail : string;
+  constructor(private act: ActivatedRoute) { 
+    act.params.subscribe(data=>{
+      this.mail = data['mail'];
+    })
+  }
 
   ngOnInit() {
   }

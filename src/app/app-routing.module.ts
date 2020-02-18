@@ -20,7 +20,7 @@ import { ValidateMailComponent } from './components/validate-mail/validate-mail.
 const routes: Routes = [
   //{path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
-  {path: 'validate-email', component: ValidateMailComponent},
+  {path: 'validate-email/:mail', component: ValidateMailComponent},
   {path: 'switch-seller', component: SwitchSellerComponent},
   {path: 'register-option', component: RegisterOptionComponent},
   {path: 'search/:category/:subCategory', component: SearchComponent},

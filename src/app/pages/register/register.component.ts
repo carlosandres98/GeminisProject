@@ -30,7 +30,7 @@ export class RegisterComponent implements OnInit {
 
   goRegister(formData:NgForm){
     console.log(this.userDB);
-    this.router.navigate(['/validate-email']);
+    this.router.navigate(['/validate-email',this.userDB.mail]);
   }
 
 }
