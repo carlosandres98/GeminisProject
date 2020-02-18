@@ -99,15 +99,20 @@
                 <div class="col-12">
                     <form>
                         <div class="row">
-                            <div class="col-10">
-                                <input class="form-control" type="search" placeholder="Search"
-                                    aria-label="Search">
+                            <div class="col-7">
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
 
                             </div>
+                            <div class="col-1">
+                                <a class="nav-link" routerLink="/car">
+                                    <img src="assets/icons/cart.svg" alt="">
+                                </a>
+                            </div>
                             <div class="col-2">
-                                <button class="btn btn-primary"
-                                    type="submit">Search</button>
-
+                                <button class="btn btn-primary" type="submit">Registrarme</button>
+                            </div>
+                            <div class="col-2">
+                                <button id="position-btn-login" class="btn btn-outline-primary" type="submit">Iniciar sesión</button>
                             </div>
                         </div>
                     </form>
@@ -230,16 +235,8 @@
 
 
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/car">
-                    <img src="assets/icons/cart.svg" alt="">
-                </a>
-            </li>
             <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <img class="personIcon" src="assets/icons/identity.svg" alt="">
-                </a>
+                
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" (click)="goLogin()">Iniciar sesión</a>
                     <a class="dropdown-item" (click)="goRegister()">Registrarme</a>
