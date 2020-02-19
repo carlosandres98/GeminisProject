@@ -61,8 +61,7 @@ export class NavbarComponent implements OnInit {
 
   searchProduct(productName: string) {
     productName = this.productService.fillPipeProduct(productName);
-    console.log(productName);
-    this.router.navigate(['/login'])
+    this.router.navigate(['/search-product',productName])
   }
 
   goLogin() {

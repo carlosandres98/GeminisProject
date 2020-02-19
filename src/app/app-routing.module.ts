@@ -15,11 +15,13 @@ import { RecoverpasswordComponent } from './pages/recoverpassword/recoverpasswor
 import { ConfirmpasswordComponent } from './pages/confirmpassword/confirmpassword.component';
 import { SwitchSellerComponent } from './components/switch-seller/switch-seller.component';
 import { ValidateMailComponent } from './components/validate-mail/validate-mail.component';
+import { SearchProductComponent } from './components/search-product/search-product.component';
 
 
 const routes: Routes = [
   //{path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+  {path: 'search-product/:productName', component: SearchProductComponent},
   {path: 'validate-email/:mail', component: ValidateMailComponent},
   {path: 'switch-seller', component: SwitchSellerComponent},
   {path: 'register-option', component: RegisterOptionComponent},

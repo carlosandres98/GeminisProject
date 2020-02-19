@@ -385,6 +385,7 @@ export class ProductServiceService {
 
   ];
 
+  
   public carList: ProductI[] = [];
 
   public productPrice: number;
@@ -463,6 +464,20 @@ export class ProductServiceService {
     }
     return productFind;
   };
+
+  public sharedProducts = (nameProduct: string) => {
+    let products: ProductI[] = [];
+    let productName = '';
+    for (let product of this.productList) {
+      productName = product.name;
+      if (productName.indexOf(nameProduct) >= 0) {
+        products.push(product);
+      }
+    }
+
+    return products;
+  }
+
 
 }
 
