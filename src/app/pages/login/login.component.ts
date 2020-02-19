@@ -33,6 +33,7 @@ export class LoginComponent implements OnInit {
 
     if (this.userD) {
       this.router.navigate(['/switch-seller']);
+
     } else {
       this.access = false;
     }

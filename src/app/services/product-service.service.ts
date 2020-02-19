@@ -369,6 +369,11 @@ export class ProductServiceService {
 
   ];
 
+  public fillPipeProduct = (productName: string) => {
+    productName = productName.charAt(0).toUpperCase() + productName.slice(1);
+    return productName;
+  }
+
   public productListByCategory: ProductI[] = [];
   public productListByCategorySub: ProductI[] = [];
 
@@ -382,7 +387,7 @@ export class ProductServiceService {
 
   public carList: ProductI[] = [];
 
-  public productPrice : number;
+  public productPrice: number;
 
 
   constructor() {
@@ -401,8 +406,8 @@ export class ProductServiceService {
   }
 
   getCarProductPrice = () => {
-    let countPrice : number = 0 ;
-    for (let product of this.carList){
+    let countPrice: number = 0;
+    for (let product of this.carList) {
       countPrice = countPrice + product.price;
     }
 
@@ -438,9 +443,9 @@ export class ProductServiceService {
       if (product.category == category && product.subcategory == subCategory) {
         productFind = product;
         this.productListByCategorySub.push(productFind);
-        
+
       } else {
-        
+
       }
     }
     return productFind;

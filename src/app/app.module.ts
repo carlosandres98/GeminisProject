@@ -26,6 +26,7 @@ import { RecoverpasswordComponent } from './pages/recoverpassword/recoverpasswor
 import { ConfirmpasswordComponent } from './pages/confirmpassword/confirmpassword.component';
 import { SwitchSellerComponent } from './components/switch-seller/switch-seller.component';
 import { ValidateMailComponent } from './components/validate-mail/validate-mail.component';
+import { SearchProductComponent } from './components/search-product/search-product.component';
 
 
 @NgModule({
@@ -69,7 +70,9 @@ import { ValidateMailComponent } from './components/validate-mail/validate-mail.
   
     SwitchSellerComponent,
   
-    ValidateMailComponent
+    ValidateMailComponent,
+  
+    SearchProductComponent
   ],
   imports: [
     BrowserModule,
