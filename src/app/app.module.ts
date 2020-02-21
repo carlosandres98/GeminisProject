@@ -27,6 +27,8 @@ import { ConfirmpasswordComponent } from './pages/confirmpassword/confirmpasswor
 import { SwitchSellerComponent } from './components/switch-seller/switch-seller.component';
 import { ValidateMailComponent } from './components/validate-mail/validate-mail.component';
 import { SearchProductComponent } from './components/search-product/search-product.component';
+import { LikeProductComponent } from './components/like-product/like-product.component';
+import { LikeProductFormComponent } from './components/like-product-form/like-product-form.component';
 
 
 @NgModule({
@@ -72,7 +74,11 @@ import { SearchProductComponent } from './components/search-product/search-produ
   
     ValidateMailComponent,
   
-    SearchProductComponent
+    SearchProductComponent,
+  
+    LikeProductComponent,
+  
+    LikeProductFormComponent
   ],
   imports: [
     BrowserModule,

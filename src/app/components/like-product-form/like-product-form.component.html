@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+<div class="box">
+    <h3 class="text-center" style="color: #FFFFFF;">Cuentanos sobre tus productos de interés</h3>
+</div>
+<form (ngSubmit)="saveData(form)" #form="ngForm" novalidate>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <label class="checkbox-inline">
+                <input type="checkbox" name="isActive" [(ngModel)]="isActive"> Ropa
+            </label>
+        </li>
+        <li class="list-group-item">
+            <label class="checkbox-inline">
+                <input type="checkbox" name="isActive" [(ngModel)]="isActive"> Ropa
+            </label>
+        </li>
+        <li class="list-group-item">
+            <label class="checkbox-inline">
+                <input type="checkbox" name="isActive" [(ngModel)]="isActive"> Ropa
+            </label>
+        </li>
+    </ul>
+</form>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+        </div>
+    </div>
+</div>
