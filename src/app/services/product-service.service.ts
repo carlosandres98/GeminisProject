@@ -415,6 +415,8 @@ export class ProductServiceService {
     return countPrice;
   }
 
+  getAllProducts = () => this.productList;
+
   getCarList = () => this.carList;
   getoffertWeekProductList = () => this.offertWeekProductList;
   getrecommendedProductList = () => this.recommendedProductList;

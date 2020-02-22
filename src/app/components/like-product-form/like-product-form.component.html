@@ -6,18 +6,31 @@
     <ul class="list-group">
         <li class="list-group-item">
             <label class="checkbox-inline">
-                <input type="checkbox" name="isActive" [(ngModel)]="isActive"> Ropa
+                <input type="checkbox" name="isActiveClothing" [(ngModel)]="isActiveClothing"> Ropa
             </label>
         </li>
         <li class="list-group-item">
             <label class="checkbox-inline">
-                <input type="checkbox" name="isActive" [(ngModel)]="isActive"> Ropa
+                <input type="checkbox" name="isActive" [(ngModel)]="isActiveShoes"> Zapatos y Tenis
             </label>
         </li>
         <li class="list-group-item">
             <label class="checkbox-inline">
-                <input type="checkbox" name="isActive" [(ngModel)]="isActive"> Ropa
+                <input type="checkbox" name="isActive" [(ngModel)]="isActiveTechnology"> Tecnología
             </label>
+        </li>
+        <li class="list-group-item">
+            <label class="checkbox-inline">
+                <input type="checkbox" name="isActive" [(ngModel)]="isActiveHomeAppliance"> Electródomestico
+            </label>
+        </li>
+        <li class="list-group-item">
+            <label class="checkbox-inline">
+                <input type="checkbox" name="isActive" [(ngModel)]="isActiveFurniture"> Muebles
+            </label>
+        </li>
+        <li class="list-group-item">
+            <button (click)="like()" class="btn btn-outline-primary full-width">Enviar</button>
         </li>
     </ul>
 </form>
