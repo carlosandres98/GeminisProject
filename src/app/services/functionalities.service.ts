@@ -22,7 +22,7 @@ export class FunctionalitiesService {
 
 
   public likeProducts = () => {
-    this.productList = [];
+    this.productListLike = [];
     for (let i of this.likeCategories) {
       for (let product of this.productList){
         if (product.category==i){
