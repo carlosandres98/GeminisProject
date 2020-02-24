@@ -47,6 +47,7 @@ export class ProductServiceService {
       subcategory: 'Sofas',
     },
     {
+      size : ['S','M','L','XS'],
       name: 'Camisa Polo',
       image: 'assets/img/products/shirt.png',
       price: 45000,
@@ -215,6 +216,7 @@ export class ProductServiceService {
       subcategory: 'Niños'
     },
     {
+      size : ['S','M','L','XS'],
       name: 'Buzo Saco Blanco',
       image: 'assets/img/products/ropa03.png',
       price: 70000,
@@ -223,6 +225,7 @@ export class ProductServiceService {
       subcategory: 'Hombre'
     },
     {
+      size : ['M','L'],
       name: 'Hermosa Blusa Para Dama',
       image: 'assets/img/products/ropa04.png',
       price: 17000,
@@ -484,6 +487,7 @@ export class ProductServiceService {
 }
 
 export interface ProductI {
+  size?: string[];
   image: string;
   name: string;
   price: number;
