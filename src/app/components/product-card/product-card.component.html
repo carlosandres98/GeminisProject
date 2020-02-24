@@ -4,11 +4,11 @@
         <div (click)="goDetailProduct(product.name)" id="select" *ngFor="let product of productList"
             class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
             <div class="card m-3" style="background: #FFFFFF;">
-                <img [src]="product.image" class="card-img-top card-design-image" width="200" height="200">
+                <img [src]="product.image" class="card-img-top card-design-image" width="200" height="200" alt="szs">
                 <div class="card-body">
 
                     <div class="card-design-text-container">
-                        <h5 class="card-design-text-primary">{{product.name}}</h5>
+                        <h5 id="trunk-text" class="card-design-text-primary">{{product.name}}</h5>
                         <h3 class="card-design-text-secondary">{{ product.price | currency:'COP$'}}</h3>
                     </div>
                     <div style="text-align: center; justify-content: center;">

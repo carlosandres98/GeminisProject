@@ -14,22 +14,17 @@ export class FunctionalitiesService {
     this.productList = producService.getAllProducts();
 
   }
-  go(like: string[]) {
-    this.likeCategories = like;
-    
-    console.log(this.likeProducts());
-  }
-
-
-  public likeProducts = () => {
+  public likeProducts = (like: string[]) => {
     this.productListLike = [];
-    for (let i of this.likeCategories) {
-      for (let product of this.productList){
-        if (product.category==i){
+    for (let i of like) {
+      for (let product of this.productList) {
+        if (product.category == i) {
           this.productListLike.push(product);
         }
       }
     }
     return this.productListLike;
   }
+
+  public getLikeProductsList = () => this.productListLike;
 }

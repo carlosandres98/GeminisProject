@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { FunctionalitiesService } from '../../services/functionalities.service';
+import { ProductI } from '../../services/product-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-like-product-form',
@@ -16,7 +18,9 @@ export class LikeProductFormComponent implements OnInit {
   public isActiveHomeAppliance: boolean;
   public isActiveFurniture: boolean;
 
-  constructor(private fun: FunctionalitiesService) { }
+  public test : string = 'Test';
+  public likeProducts: ProductI[];
+  constructor(private fun: FunctionalitiesService,private router:Router) { }
 
   ngOnInit() {
   }
@@ -38,7 +42,9 @@ export class LikeProductFormComponent implements OnInit {
     if (this.isActiveFurniture == true) {
       this.likeClient.push('Muebles');
     }
-    this.fun.go(this.likeClient);
+    this.likeProducts = this.fun.likeProducts(this.likeClient);
+    this.router.navigate(['/product-like']); 
+
   }
 
   saveData(form: NgForm) {
