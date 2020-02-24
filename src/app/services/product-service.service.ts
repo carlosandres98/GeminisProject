@@ -76,7 +76,7 @@ export class ProductServiceService {
       image: 'assets/img/products/electrodomesticos01.png',
       price: 219000,
       description: 'Disfruta de un sonido excepcional con el Sistema de Parlantes KWS 616 de 2.1 canales con tecnología Bluetooth®.',
-      category: 'Electródomestico',
+      category: 'Electródomesticos',
       subcategory: 'Equipos de sonido'
     },
     {
@@ -84,7 +84,7 @@ export class ProductServiceService {
       image: 'assets/img/products/electrodomesticos02.png',
       price: 499900,
       description: 'Equipo de sonido con 300 W de potencia para una experiencia de audio espectacular. Control desde el móvil con LG Bluetooth, USB dual para grabar y reproducir a la vez, lector de CD y Antena FM',
-      category: 'Electródomestico',
+      category: 'Electródomesticos',
       subcategory: 'Equipos de sonido'
     },
     {
@@ -92,7 +92,7 @@ export class ProductServiceService {
       image: 'assets/img/products/electrodomesticos04.png',
       price: 10499000,
       description: 'Capacidad 230lts brutos. Gas R600. Clasificación energética tipo B. 2 parrillas cristal templado. Cajón de verduras con tapa. 1 anaquel para botellas. 1 anaquel completo en puerta. Luz LED',
-      category: 'Electródomestico',
+      category: 'Electródomesticos',
       subcategory: 'Neveras'
     },
     {
@@ -100,7 +100,7 @@ export class ProductServiceService {
       image: 'assets/img/products/electrodomesticos05.png',
       price: 2034990,
       description: 'Secadora de ropa compacta de 9 libras de capacidad. Secadora de ropa portátil de 2.6 pies cúbicos de carga frontal con ventana de visualización integrada en la bañera de acero inoxidable y panel de control inferior. Potencia de secado de 1400w',
-      category: 'Electródomestico',
+      category: 'Electródomesticos',
       subcategory: 'Lavadoras'
     },
     {
@@ -108,7 +108,7 @@ export class ProductServiceService {
       image: 'assets/img/products/electrodomesticos08.png',
       price: 1139900,
       description: 'Disfruta del Full HD en su máxima expresión. Clean View. Wide Color Enhancer. Calidad de imagen Full HD. Conecta y comparte contenidos',
-      category: 'Electródomestico',
+      category: 'Electródomesticos',
       subcategory: 'Televisores'
     },
     {

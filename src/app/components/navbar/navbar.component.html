@@ -108,7 +108,12 @@
                                     <img src="assets/icons/cart.svg" alt="">
                                 </a>
                             </div>
-                            <div class="col-sm-6 col-lg-2 mt-2">
+                            <div *ngIf="login==true" class="col-sm-12 col-lg-1">
+                                <a class="nav-link" routerLink="/personal-profile">
+                                    <img src="assets/icons/person.svg" alt="">
+                                </a>
+                            </div>
+                            <div *ngIf="login==false" class="col-sm-6 col-lg-2 mt-2">
                                 <a routerLink="/login" class="btn btn-outline-primary">Iniciar Session</a>
                             </div>
                         </div>

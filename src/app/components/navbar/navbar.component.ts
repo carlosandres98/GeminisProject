@@ -14,6 +14,7 @@ export class NavbarComponent implements OnInit {
   @Input() Category: any;
   @Input() subCategory: any;
 
+  public login: boolean = true;
 
   public navbar: any = {
     home: 'Ofertas',
@@ -36,7 +37,7 @@ export class NavbarComponent implements OnInit {
       phones: 'Celulares'
     },
     electrodomesticos: {
-      category: 'Electródomestico',
+      category: 'Electródomesticos',
       tv: 'Televisores',
       lavadora: 'Lavadoras',
       secadora: 'Secadoras',
@@ -61,7 +62,7 @@ export class NavbarComponent implements OnInit {
 
   searchProduct(productName: string) {
     productName = this.productService.fillPipeProduct(productName);
-    this.router.navigate(['/search-product',productName])
+    this.router.navigate(['/search-product', productName])
   }
 
   goLogin() {

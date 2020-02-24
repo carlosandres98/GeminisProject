@@ -8,7 +8,7 @@ export class UserServiceService {
 
   public usersDB: usersDBI[] = [
     {
-      names: 'Carlos Andés',
+      names: 'Carlos Andrés',
       lastnames: 'Montoya Cardona',
       email: 'camc@inso.com',
       password: '123',
