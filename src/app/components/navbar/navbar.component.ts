@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit {
 
 
   public navbar: any = {
-    home: 'Home',
+    home: 'Ofertas',
     ropa: {
       category: 'Ropa',
       hombre: 'Hombre',

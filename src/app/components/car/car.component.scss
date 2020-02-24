@@ -20,17 +20,33 @@
   margin: 2%;
 }
 
-#btn-agregar-mas{
+#btn-agregar-mas {
   justify-content: center;
   margin-bottom: 2%;
 }
 
-#table-car{
-    justify-content: center;
+#table-car {
+  justify-content: center;
 }
 
-.centrar{
+.centrar {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#car-bg {
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

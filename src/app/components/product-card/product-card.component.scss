@@ -1,49 +1,55 @@
-#select{
-    cursor: pointer;
+#select {
+  cursor: pointer;
 }
 
-.row-design-content{
-    margin-left: 5% !important;
-    margin-right: 5% !important;
+.row-design-content {
+  margin-left: 5% !important;
+  margin-right: 5% !important;
 }
 
-.card-design-image{
-    padding: 15%;
-    padding-bottom: 10%;
-    border-bottom: 1.2px solid #BBBBBB;
+.card-design-image {
+  padding: 15%;
+  padding-bottom: 10%;
+  border-bottom: 1.2px solid #bbbbbb;
 }
 
-.card-design-text-container{
-    padding-left: 3%;
-    padding-right: 3%;
+.card-design-text-container {
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
-.card-design-text-primary{
-    color: #333;
-    // font-size: 24px;
+.card-design-text-primary {
+  color: #333;
+  // font-size: 24px;
 }
 
-.card-design-text-secondary{
-    color: black;
-    font-size: 20px;
+.card-design-text-secondary {
+  color: black;
+  font-size: 20px;
 }
 
-.card-design-col-adjust-btn{
-    margin: 0.5%;
+.card-design-col-adjust-btn {
+  margin: 0.5%;
 }
 
-.btn-size-container{
-    height: 90%;
-    padding: 5%;
+.btn-size-container {
+  height: 90%;
+  padding: 5%;
 }
 
-.card-design-img-button{
-    padding-right: 15px;
-    position: relative;
-   top: 5px;
+.card-design-img-button {
+  padding-right: 15px;
+  position: relative;
+  top: 5px;
 }
 
-.btnToBuy{
-    width: 105px;
-    height: 40px;
+.btnToBuy {
+  width: 105px;
+  height: 40px;
+}
+
+#trunk-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
