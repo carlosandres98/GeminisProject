@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { userI } from '../../pages/register/register.component';
-import { UserServiceService, usersDBI } from '../../services/user-service.service';
 
 @Component({
   selector: 'app-personal-profile',
@@ -9,11 +7,7 @@ import { UserServiceService, usersDBI } from '../../services/user-service.servic
 })
 export class PersonalProfileComponent implements OnInit {
 
-  public userDB: usersDBI;
-  constructor(private userService:UserServiceService) {
-    this.userDB = this.userService.userDB;
-    console.log(this.userDB);
-   }
+  constructor() { }
 
   ngOnInit() {
   }
