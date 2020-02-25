@@ -22,7 +22,7 @@ export class UserServiceService {
     },
     {
       id: '1037659854',
-      photo: '',
+      photo: 'assets/users/mol.jpg',
       accountype: 'Comprador Y Vendedor',
       names: 'Mateo',
       mode: 'Comprador',
@@ -33,8 +33,8 @@ export class UserServiceService {
     },
     {
       id: '1037659854',
-      photo: '',
-      accountype: 'Comprador Y Vendedor',
+      photo: 'assets/users/sah.jpg',
+      accountype: 'Vendedor',
       names: 'Santiago',
       mode: 'Vendedor',
       lastnames: 'Agudelo Hernándes',

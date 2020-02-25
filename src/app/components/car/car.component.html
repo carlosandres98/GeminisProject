@@ -1,13 +1,6 @@
 <app-navbar></app-navbar>
 <div class="container">
     <div class="row">
-        <div class="col-xl-12 m-3">
-            <button style="color: #FFFFFF;" type="submit" class="btn btn-outline-primary full-width"
-                routerLink="/dashboard">Agregar más
-                productos</button>
-        </div>
-    </div>
-    <div class="row">
         <div class="col-lg-6 col-xl-8">
             <div *ngFor="let product of CarList" class="card m-3">
                 <div class="card-title m-2" style="color: blue;">
@@ -32,17 +25,22 @@
                         <h4>{{totalPay | currency:'COP$'}} </h4>
                         <br>
                         <button class="btn btn-outline-success full-width">Pagar</button>
-                        
+
                     </div>
                 </div>
                 <div class="card-title">
                     <div *ngIf="CarList.length==0" class="m-2">
                         <h3>No tienes productos aún</h3>
+                        <div class="mt-5">
+                            <button style="color: rgb(20, 174, 212);" type="submit" class="btn btn-outline-success full-width"
+                            routerLink="/dashboard">Agregar más
+                            productos</button>
+                        </div>
                     </div>
                 </div>
-                <div class="card-body">
-                </div>
+                
             </div>
         </div>
     </div>
 </div>
+<app-footer></app-footer>
