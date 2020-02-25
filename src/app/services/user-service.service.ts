@@ -1,19 +1,21 @@
 import { Injectable } from '@angular/core';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class UserServiceService {
 
+  public userDB: usersDBI;
 
   public usersDB: usersDBI[] = [
 
     {
       id: '1037659854',
-      photo: '',
-      accountype: '',
+      photo: 'assets/img/users/camc.jpg',
+      accountype: 'Comprador Y Vendedor',
       names: 'Carlos Andrés',
-      mode: '',
+      mode: 'Vendedor',
       lastnames: 'Montoya Cardona',
       email: 'camc@inso.com',
       password: '123',
@@ -21,10 +23,10 @@ export class UserServiceService {
     },
     {
       id: '1037659854',
-      photo: '',
-      accountype: '',
-      names: 'Carlos Andrés',
-      mode: '',
+      photo: 'assets/img/users/teo.jpg',
+      accountype: 'Comprador y Vendedor',
+      names: 'Mateo',
+      mode: 'Comprador',
       lastnames: 'Orozco Lotero',
       email: 'mol@inso.com',
       password: '123',
@@ -32,11 +34,11 @@ export class UserServiceService {
     },
     {
       id: '1037659854',
-      photo: '',
+      photo: 'assets/img/users/sah.jpg',
       accountype: '',
-      names: 'Carlos Andrés',
-      mode: '',
-      lastnames: 'Santiago Agudelo Hernándes',
+      names: 'Santiago',
+      mode: 'Comprador',
+      lastnames: 'Agudelo Hernándes',
       email: 'sah@inso.com',
       password: '123',
       confirmpass: '123'
@@ -45,15 +47,19 @@ export class UserServiceService {
 
   getUsersList = () => this.usersDB;
 
+
+
   login = (email: string, password: string) => {
     let userDB: usersDBI;
     for (let user of this.usersDB) {
 
       if (user.email == email && user.password == password) {
         userDB = user;
+        this.userDB = userDB;
         break;
       } else {
         userDB = null;
+        this.userDB = userDB;
       }
     }
     return userDB;

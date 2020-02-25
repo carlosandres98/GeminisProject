@@ -6,14 +6,80 @@
                 <div class="card-body">
                     <h3 class="card-title text-center">Perfil de usuario</h3>
                     <ul class="list-group">
-                        <li class="list-group-item">Foto de perfíl</li>
-                        <li class="list-group-item">Nombres: </li>
-                        <li class="list-group-item">Apellidos: </li>
-                        <li class="list-group-item">Foto de perfíl</li>
-                        <li class="list-group-item">Correo: </li>
-                        <li class="list-group-item">Tipo de cuenta:</li>
-                        <li class="list-group-item">Modo:</li>
-                        <li class="list-group-item"><button class="btn btn-outline-primary full-width">Editar</button></li>
+                        <li class="list-group-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <strong>Foto de perfil:</strong>
+                                    </div>
+                                    <div class="col-6">
+                                        <img [src]="userDB.photo" class="rounded-circle" width="67" height="67">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <strong>Nombre:</strong>
+                                    </div>
+                                    <div class="col-6">
+                                        {{userDB.names}}
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <strong>Apellidos:</strong>
+                                    </div>
+                                    <div class="col-6">
+                                        {{userDB.lastnames}}
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <strong>Correo:</strong>
+                                    </div>
+                                    <div class="col-6">
+                                        {{userDB.email}}
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <strong>Tipo de cuenta:</strong>
+                                    </div>
+                                    <div class="col-6">
+                                        {{userDB.accountype}}
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <strong>Modo:</strong>
+                                    </div>
+                                    <div class="col-6">
+                                        {{userDB.mode}}
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item"><button class="btn btn-outline-primary full-width">Editar</button>
+                        </li>
                     </ul>
                 </div>
             </div>
