@@ -7,22 +7,35 @@ export class UserServiceService {
 
 
   public usersDB: usersDBI[] = [
+
     {
+      id: '1037659854',
+      photo: '',
+      accountype: '',
       names: 'Carlos Andrés',
+      mode: '',
       lastnames: 'Montoya Cardona',
       email: 'camc@inso.com',
       password: '123',
       confirmpass: '123'
     },
     {
-      names: 'Mateo',
+      id: '1037659854',
+      photo: '',
+      accountype: '',
+      names: 'Carlos Andrés',
+      mode: '',
       lastnames: 'Orozco Lotero',
       email: 'mol@inso.com',
       password: '123',
       confirmpass: '123'
     },
     {
-      names: 'Santiago',
+      id: '1037659854',
+      photo: '',
+      accountype: '',
+      names: 'Carlos Andrés',
+      mode: '',
       lastnames: 'Santiago Agudelo Hernándes',
       email: 'sah@inso.com',
       password: '123',
@@ -35,7 +48,7 @@ export class UserServiceService {
   login = (email: string, password: string) => {
     let userDB: usersDBI;
     for (let user of this.usersDB) {
-      
+
       if (user.email == email && user.password == password) {
         userDB = user;
         break;
@@ -51,7 +64,11 @@ export class UserServiceService {
   }
 }
 export interface usersDBI {
+  id: string;
+  photo: string;
+  accountype: string;
   names: string;
+  mode: string;
   lastnames: string;
   email: string;
   password: string;
