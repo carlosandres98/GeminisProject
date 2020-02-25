@@ -29,7 +29,10 @@
                 <div class="card-title">
                     <div *ngIf="CarList.length!=0" class="m-2">
                         <h3>Tienes: {{countProducts}} Productos</h3>
-                        <h4 style="color: blue;">Pagar: ${{totalPay}} </h4>
+                        <h4>{{totalPay | currency:'COP$'}} </h4>
+                        <br>
+                        <button class="btn btn-outline-success full-width">Pagar</button>
+                        
                     </div>
                 </div>
                 <div class="card-title">
