@@ -5,15 +5,16 @@ import { Injectable } from '@angular/core';
 })
 export class UserServiceService {
 
+  public userDB: usersDBI;
 
   public usersDB: usersDBI[] = [
 
     {
       id: '1037659854',
-      photo: '',
-      accountype: '',
+      photo: 'assets/users/camc.jfif',
+      accountype: 'Comprador',
       names: 'Carlos Andrés',
-      mode: '',
+      mode: 'Comprador',
       lastnames: 'Montoya Cardona',
       email: 'camc@inso.com',
       password: '123',
@@ -22,9 +23,9 @@ export class UserServiceService {
     {
       id: '1037659854',
       photo: '',
-      accountype: '',
-      names: 'Carlos Andrés',
-      mode: '',
+      accountype: 'Comprador Y Vendedor',
+      names: 'Mateo',
+      mode: 'Comprador',
       lastnames: 'Orozco Lotero',
       email: 'mol@inso.com',
       password: '123',
@@ -33,10 +34,10 @@ export class UserServiceService {
     {
       id: '1037659854',
       photo: '',
-      accountype: '',
-      names: 'Carlos Andrés',
-      mode: '',
-      lastnames: 'Santiago Agudelo Hernándes',
+      accountype: 'Comprador Y Vendedor',
+      names: 'Santiago',
+      mode: 'Vendedor',
+      lastnames: 'Agudelo Hernándes',
       email: 'sah@inso.com',
       password: '123',
       confirmpass: '123'
@@ -51,8 +52,10 @@ export class UserServiceService {
 
       if (user.email == email && user.password == password) {
         userDB = user;
+        this.userDB = userDB;
         break;
       } else {
+        this.userDB = userDB;
         userDB = null;
       }
     }
