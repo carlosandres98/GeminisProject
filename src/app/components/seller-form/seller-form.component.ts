@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { usersDBI, UserServiceService } from '../../services/user-service.service';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-seller-form',
@@ -10,6 +11,7 @@ import { NgForm } from '@angular/forms';
 export class SellerFormComponent implements OnInit {
 
   user: usersDBI;
+  userValidate: boolean = true;
 
   userDB: usersDBI = {
     city: '',
@@ -18,6 +20,7 @@ export class SellerFormComponent implements OnInit {
     services: '',
     id: '',
     photo: '',
+    phone: '',
     accountype: '',
     names: '',
     mode: '',
@@ -27,7 +30,7 @@ export class SellerFormComponent implements OnInit {
     confirmpass: ''
 
   };
-  constructor(private userSerice: UserServiceService) {
+  constructor(private userSerice: UserServiceService, private rt: Router) {
 
   }
 
@@ -36,24 +39,27 @@ export class SellerFormComponent implements OnInit {
 
   goRegister(formData: NgForm) {
     this.userDB = this.userSerice.getUserByEmail(this.userDB.email);
-    this.user = {
-      city: formData.value.txtCity,
-      country: formData.value.txtCountry,
-      address: formData.value.txtAddress,
-      services: formData.value.txtServices,
-      phone : formData.value.txtPhone,
-      id: formData.value.txtId,
-      photo: this.userDB.photo,
-      accountype: this.userDB.accountype,
-      names: this.userDB.names,
-      mode: this.userDB.mode,
-      lastnames: this.userDB.lastnames,
-      email: this.userDB.email,
-      password: this.userDB.password,
-      confirmpass: this.userDB.confirmpass
+    if (this.userDB) {
+      this.user = {
+        city: formData.value.txtCity,
+        country: formData.value.txtCountry,
+        address: formData.value.txtAddress,
+        services: formData.value.txtServices,
+        phone: formData.value.txtPhone,
+        id: formData.value.txtId,
+        photo: this.userDB.photo,
+        accountype: this.userDB.accountype,
+        names: this.userDB.names,
+        mode: this.userDB.mode,
+        lastnames: this.userDB.lastnames,
+        email: this.userDB.email,
+        password: this.userDB.password,
+        confirmpass: this.userDB.confirmpass
+      }
+      console.log(this.user);
+    } else {
+      this.userValidate = false;
+
     }
-    console.log(this.user);
-
   }
-
 }
