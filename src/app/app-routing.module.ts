@@ -8,7 +8,7 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { PersonalProfileComponent } from './components/personal-profile/personal-profile.component';
 import { CarComponent } from './components/car/car.component';
 import { HelpcenterComponent } from './pages/helpcenter/helpcenter.component';
-import { RegisterSellerComponent } from './components/register-seller/register-seller.component';
+// import { RegisterSellerComponent } from './components/register-seller/register-seller.component';
 import { RegisterOptionComponent } from './components/register-option/register-option.component';
 import { SearchComponent } from './components/search/search.component';
 import { RecoverpasswordComponent } from './pages/recoverpassword/recoverpassword.component';
