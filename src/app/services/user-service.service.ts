@@ -67,6 +67,10 @@ export class UserServiceService {
   }
 }
 export interface usersDBI {
+  city?: string,
+  country?: string;
+  address?: string;
+  services?: string;
   id: string;
   photo: string;
   accountype: string;

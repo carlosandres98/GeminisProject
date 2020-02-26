@@ -18,15 +18,17 @@ import { ValidateMailComponent } from './components/validate-mail/validate-mail.
 import { SearchProductComponent } from './components/search-product/search-product.component';
 import { LikeProductFormComponent } from './components/like-product-form/like-product-form.component';
 import { LikeProductComponent } from './components/like-product/like-product.component';
+import { SellerFormComponent } from './components/seller-form/seller-form.component';
 
 
 const routes: Routes = [
-  //{path: '', redirectTo: 'login', pathMatch: 'full'},
+  
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   {path: 'product-like', component: LikeProductComponent},
   {path: 'product-like-form', component: LikeProductFormComponent},
   {path: 'search-product/:productName', component: SearchProductComponent},
   {path: 'validate-email/:mail', component: ValidateMailComponent},
+  {path: 'seller-form', component: SellerFormComponent},
   {path: 'switch-seller', component: SwitchSellerComponent},
   {path: 'register-option', component: RegisterOptionComponent},
   {path: 'search/:category/:subCategory', component: SearchComponent},
@@ -41,9 +43,8 @@ const routes: Routes = [
   {path: 'dashboard', component: DashboardComponent},
   {path: '*', component: LoginComponent},
   {path: 'helpcenter', component: HelpcenterComponent},
-  {path : '**' , redirectTo : 'dashboard'},
-  {path: 'register-seller', component: RegisterSellerComponent}
-
+  {path : '**' , redirectTo : 'dashboard'}
+  
 ];
 
 @NgModule({

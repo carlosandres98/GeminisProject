@@ -18,9 +18,9 @@ import { PersonalProfileComponent } from './components/personal-profile/personal
 import { CarComponent } from './components/car/car.component';
 import { HelpcenterComponent } from './pages/helpcenter/helpcenter.component';
 import { HelpoptionsComponent } from './components/helpoptions/helpoptions.component';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { RegisterOptionComponent } from './components/register-option/register-option.component';
-import { RegisterSellerComponent } from './components/register-seller/register-seller.component';
+
 import { SearchComponent } from './components/search/search.component';
 import { RecoverpasswordComponent } from './pages/recoverpassword/recoverpassword.component';
 import { ConfirmpasswordComponent } from './pages/confirmpassword/confirmpassword.component';
@@ -29,6 +29,7 @@ import { ValidateMailComponent } from './components/validate-mail/validate-mail.
 import { SearchProductComponent } from './components/search-product/search-product.component';
 import { LikeProductComponent } from './components/like-product/like-product.component';
 import { LikeProductFormComponent } from './components/like-product-form/like-product-form.component';
+import { SellerFormComponent } from './components/seller-form/seller-form.component';
 
 
 @NgModule({
@@ -37,48 +38,48 @@ import { LikeProductFormComponent } from './components/like-product-form/like-pr
     LoginComponent,
     DashboardComponent,
     NavbarComponent,
-  
+
     RegisterComponent,
-  
+
     ProductsComponent,
-  
+
     ProductOfertComponent,
-  
+
     ProductCardComponent,
-  
+
     FooterComponent,
-  
+
     ProductDetailComponent,
-  
+
     SlideComponent,
-  
+
     PersonalProfileComponent,
-  
+
     CarComponent,
-  
+
     HelpcenterComponent,
-  
+
     HelpoptionsComponent,
-  
+
     RegisterOptionComponent,
-  
-    RegisterSellerComponent,
-  
+
     SearchComponent,
-  
+
     RecoverpasswordComponent,
-  
+
     ConfirmpasswordComponent,
-  
+
     SwitchSellerComponent,
-  
+
     ValidateMailComponent,
-  
+
     SearchProductComponent,
-  
+
     LikeProductComponent,
-  
-    LikeProductFormComponent
+
+    LikeProductFormComponent,
+
+    SellerFormComponent
   ],
   imports: [
     BrowserModule,

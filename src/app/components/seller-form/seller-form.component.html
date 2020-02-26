@@ -1,0 +1,47 @@
+<div class="wrapper">
+    <div class="card col-lg-4 col-md-6 col-sm-8 col-xs-12">
+        <div class="card-body">
+            <h5 class="card-title text-center">Registro vendedor</h5>
+            <form (ngSubmit)="goRegister(formData)" #formData="ngForm" novalidate="">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Pais: </label>
+                    <input type="text" class="form-control" name="txtCountry" [(ngModel)]="userDB.country" #txtCountry="ngModel" required>
+                    <div *ngIf="txtCountry.errors?.required" class="txt-invalid">
+                        Campo requerido
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Ciudad: </label>
+                    <input type="text" class="form-control" name="txtCity" [(ngModel)]="userDB.city" #txtCity="ngModel" required>
+                    <div *ngIf="txtCity.errors?.required" class="txt-invalid">
+                        Campo requerido
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Cédula: </label>
+                    <input type="text" class="form-control" name="txtId" [(ngModel)]="userDB.id" #txtId="ngModel"  required>
+                    <div *ngIf="txtId.errors?.required" class="txt-invalid">
+                        Campo requerido
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Dirección: </label>
+                    <input type="text" class="form-control" name="txtAddress" [(ngModel)]="userDB.address" #txtAddress="ngModel"  required>
+                    <div *ngIf="txtAddress.errors?.required" class="txt-invalid">
+                        Campo requerido
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Servicios que ofrece: </label>
+                    <input type="text" class="form-control" name="txtAddress" [(ngModel)]="userDB.address" #txtAddress="ngModel" required>
+                    <div *ngIf="txtLastNames.errors?.required" class="txt-invalid">
+                        Campo requerido
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary full-width" [disabled]="!formData.valid"
+                    (click)="goRegister(formData)">Registrarme</button>
+                Al registrarme como vendedor acepto los terminos y condiciónes de Geminis
+            </form>
+        </div>
+    </div>
+</div>

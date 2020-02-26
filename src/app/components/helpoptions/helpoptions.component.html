@@ -6,9 +6,9 @@
             <div class="col-6">
                 <div class="list-group" id="list-tab" role="tablist">
                     <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
-                        href="#list-home" role="tab" aria-controls="home">Preguntas frecuentes</a>
+                        href="#list-home" role="tab" (click)="text='text'" aria-controls="home"><p [ngClass]="'text'">Preguntas frecuentes</p></a>
                     <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
-                        href="#list-profile" role="tab" aria-controls="profile">Términos y condiciones</a>
+                        href="#list-profile" role="tab" style="color: #333;" (click)="text='text'" aria-controls="profile"><p [ngClass]="'text'">Términos y condiciones</p></a>
                 </div>
             </div>
         </div>

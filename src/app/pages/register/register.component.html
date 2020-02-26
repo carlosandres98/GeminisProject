@@ -3,7 +3,7 @@
         <div class="card-body">
             <h5 class="card-title text-center">Registro</h5>
             <form (ngSubmit)="goRegister(formData)" #formData="ngForm" novalidate="">
-                <div class="form-group">
+                <div class="form-group"> 
                     <label for="exampleInputEmail1">Nombres</label>
                     <input type="text" class="form-control" name="txtNames"  #txtNames="ngModel" [(ngModel)]="userDB.names" required>
                     <div *ngIf="txtNames.errors?.required" class="txt-invalid">
