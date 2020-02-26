@@ -7,6 +7,8 @@ export class UserServiceService {
 
   public userDB: usersDBI;
 
+  public userEmail: string;
+
   public usersDB: usersDBI[] = [
 
     {
@@ -52,6 +54,23 @@ export class UserServiceService {
 
       if (user.email == email && user.password == password) {
         userDB = user;
+        this.userEmail = user.email;
+        this.userDB = userDB;
+        break;
+      } else {
+        this.userDB = userDB;
+        userDB = null;
+      }
+    }
+    return userDB;
+  }
+
+  getUserByEmail = (email: string) => {
+    let userDB: usersDBI;
+    for (let user of this.usersDB) {
+
+      if (user.email == email) {
+        userDB = user;
         this.userDB = userDB;
         break;
       } else {
@@ -65,12 +84,15 @@ export class UserServiceService {
   constructor() {
     this.usersDB = this.getUsersList();
   }
+
+
 }
 export interface usersDBI {
   city?: string,
   country?: string;
   address?: string;
   services?: string;
+  phone?: string;
   id: string;
   photo: string;
   accountype: string;
