@@ -1,0 +1,213 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="row">
+        <div class="col" class="mx-auto">
+            <span class="float-left">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/logo/logo-full.png" class="navbar-logo" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </span>
+        </div>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="container">
+            <div class="row" style="width: 100%;">
+                <div class="col-12" style="align-content: flex-start;">
+                    <form>
+                        <div class="row" style="align-content: center;">
+
+                            <div class="col-sm-12 col-lg-1">
+                                <a class="nav-link" routerLink="/personal-profile">
+                                    <img src="assets/icons/person.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-lg-1">
+                                <a class="nav-link" routerLink="/car">
+                                    <img src="assets/icons/cart.svg" alt="">
+                                </a>
+                            </div>
+
+                            <div *ngIf="login==true" class="col-sm-12 col-lg-1">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="assets/icons/person.svg" alt="">
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#" routerLink="/personal-profile">Perfil</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#" (click)="goHelpCenter()">Politicas</a>
+                                            <a class="dropdown-item" href="#" routerLink="/login">Cerrar sesión</a>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div *ngIf="login==false" class="col-sm-6 col-lg-2 mt-2">
+                                <a routerLink="/login" class="btn btn-outline-primary">Iniciar Session</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="navbar-nav" style="width: 100%;">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" routerLink="/helpcenter">¿Necesitas ayuda?</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" (click)="goLogin()">Iniciar sesión</a>
+                    <a class="dropdown-item" (click)="goRegister()">Registrarme</a>
+                    <a class="dropdown-item" (click)="goProfile()">Ver perfil</a>
+
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Politicas</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-primary m-3" role="alert">
+                <h4 class="text-center">Modo vendedor</h4>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card m-3" style="display: inline-block; background: #FFFFFF; width: 85%;">
+                <img src="assets/img/products/electrodomesticos01.png" class="card-img-top card-design-image"
+                    width="200" height="200" alt="szs" style="display: block;">
+                <div class="card-body">
+
+                    <div class="card-design-text-container">
+                        <h6 id="trunk-text" class="card-design-text-primary"></h6>
+                        <h3 class="card-design-text-secondary"></h3>
+                    </div>
+                    <hr>
+                    <h4 class="text-center">Vende productos</h4>
+                    <hr>
+                    <div class="row">
+                        <div class="col-6">
+                            Ventas:
+                        </div>
+                        <div class="col-6">
+                            <h5><span class="badge badge-secondary">1 k</span></h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            Seguidores:
+                        </div>
+                        <div class="col-6">
+                            <h5><span class="badge badge-secondary">520</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card m-5">
+                <div class="card-title">
+                    <h4 class="text-center">Tus Productos</h4>
+                    <hr>
+                </div>
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card m-5">
+                <div class="card-title">
+                    <h4 class="text-center">Editar Productos</h4>
+                    <hr>
+                </div>
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card m-5">
+                <div class="card-title">
+                    <h4 class="text-center">Comprar Productos</h4>
+                    <hr>
+                </div>
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12">
+            <div class="slide-container">
+
+                <div class="wrapper">
+                    <div class="clash-card barbarian">
+                        <div class="clash-card__image clash-card__image--barbarian">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png"
+                                alt="barbarian" />
+                        </div>
+                        <div class="clash-card__level clash-card__level--barbarian">Level 4</div>
+                        <div class="clash-card__unit-name">Tus ventas</div>
+
+
+                        <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                            <div class="one-third">
+                                <div class="stat">5 K<sup>S</sup></div>
+                                <div class="stat-value">Ventas</div>
+                            </div>
+
+                            <div class="one-third">
+                                <div class="stat">15 K</div>
+                                <div class="stat-value">Vistas</div>
+                            </div>
+
+                            <div class="one-third no-border">
+                                <div class="stat">1 k</div>
+                                <div class="stat-value">Seguidores</div>
+                            </div>
+
+                        </div>
+
+                    </div> <!-- end clash-card barbarian-->
+                </div> <!-- end wrapper -->
+            </div> <!-- end container -->
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

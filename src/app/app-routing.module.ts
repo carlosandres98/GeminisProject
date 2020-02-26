@@ -18,6 +18,7 @@ import { SearchProductComponent } from './components/search-product/search-produ
 import { LikeProductFormComponent } from './components/like-product-form/like-product-form.component';
 import { LikeProductComponent } from './components/like-product/like-product.component';
 import { SellerFormComponent } from './components/seller-form/seller-form.component';
+import { SellerDashboardComponent } from './components/seller-dashboard/seller-dashboard.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path: 'product-like-form', component: LikeProductFormComponent},
   {path: 'search-product/:productName', component: SearchProductComponent},
   {path: 'validate-email/:mail', component: ValidateMailComponent},
+  {path: 'seller-dashboard', component: SellerDashboardComponent},
   {path: 'seller-form', component: SellerFormComponent},
   {path: 'switch-seller', component: SwitchSellerComponent},
   {path: 'register-option', component: RegisterOptionComponent},

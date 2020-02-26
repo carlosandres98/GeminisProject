@@ -30,6 +30,7 @@ import { SearchProductComponent } from './components/search-product/search-produ
 import { LikeProductComponent } from './components/like-product/like-product.component';
 import { LikeProductFormComponent } from './components/like-product-form/like-product-form.component';
 import { SellerFormComponent } from './components/seller-form/seller-form.component';
+import { SellerDashboardComponent } from './components/seller-dashboard/seller-dashboard.component';
 
 
 @NgModule({
@@ -79,7 +80,9 @@ import { SellerFormComponent } from './components/seller-form/seller-form.compon
 
     LikeProductFormComponent,
 
-    SellerFormComponent
+    SellerFormComponent,
+
+    SellerDashboardComponent
   ],
   imports: [
     BrowserModule,
