@@ -19,12 +19,14 @@ import { LikeProductFormComponent } from './components/like-product-form/like-pr
 import { LikeProductComponent } from './components/like-product/like-product.component';
 import { SellerFormComponent } from './components/seller-form/seller-form.component';
 import { SellerDashboardComponent } from './components/seller-dashboard/seller-dashboard.component';
+import { SaleProductComponent } from './components/sale-product/sale-product.component';
 
 
 const routes: Routes = [
   
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   {path: 'product-like', component: LikeProductComponent},
+  {path: 'sale-product', component: SaleProductComponent},
   {path: 'product-like-form', component: LikeProductFormComponent},
   {path: 'search-product/:productName', component: SearchProductComponent},
   {path: 'validate-email/:mail', component: ValidateMailComponent},

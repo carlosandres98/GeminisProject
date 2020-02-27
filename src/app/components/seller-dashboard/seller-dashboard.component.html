@@ -111,7 +111,7 @@
             <div>
                 <h2 class="m-5">{{title}}</h2>
                 <div class="row row-design-content">
-                    <div (click)="goDetailProduct(product.name)" id="select" *ngFor="let opt of options"
+                    <div (click)="goNavigate(i)" id="select" *ngFor="let opt of options; let i = index"
                         class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
                         <div class="card m-3" style="display: inline-block; background: #FFFFFF; width: 90%;">
                             <img [src]="opt.img" class="card-img-top card-design-image" width="200" height="200" alt="szs" style="display: block;">
