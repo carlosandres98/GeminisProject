@@ -1,10 +1,17 @@
 <app-navbar></app-navbar>
-<div style="background-color: #e0e0e0;">
+<div style="background-color: #ffffff;">
 <div class="container">
     <div class="row">
         <div class="col-lg-6 col-xl-8">
             <div *ngFor="let product of CarList" class="card m-3" style="background-color: #ffffff;">
-                <div class="card-title m-2" style="color: #424242;">
+                <img [src]="product.image" class="card-img-top card-design-image" width="200" height="200">
+                <div class="card-body">
+                    <h2 class="text-center">Producto: {{product.name}}</h2>
+                    <h4 class="text-center">Precio: ${{product.price}}</h4>
+                    <button class="btn btn-outline-primary full-width" (click)="deleteProduct(product)">Eliminar
+                        producto</button>
+                  </div>
+               <!-- <div class="card-title m-2" style="color: #424242;">
                     <h2 class="text-center">Producto: {{product.name}}</h2>
                 </div>
                 <div class="card-title m-2" style="color: #424242;">
@@ -14,8 +21,7 @@
                     <img class="m-3 centrar" [src]="product.image" width="170px">
                     <button class="btn btn-outline-primary full-width" (click)="deleteProduct(product)">Eliminar
                         producto</button>
-
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="col-lg-6 col-xl-4">
