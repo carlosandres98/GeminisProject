@@ -56,7 +56,8 @@ export class SellerFormComponent implements OnInit {
         password: this.userDB.password,
         confirmpass: this.userDB.confirmpass
       }
-      console.log(this.user);
+
+      this.rt.navigate(['/seller-dashboard']);
     } else {
       this.userValidate = false;
 
