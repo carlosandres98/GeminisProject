@@ -48,9 +48,29 @@ export class SaleProductComponent implements OnInit {
     console.log(formData);
   }
 
-  saveProduct(formData: NgForm) {
+  saveProduct(formDataP: NgForm) {
 
+    let cad : string = "-";
 
-    console.log(formData.value);
+    this.productSeller = {
+      productType: 'Product',
+      price: formDataP.value.txtPrice,
+      idSeller: '',
+      image: formDataP.value.txtFile,
+      size: [],
+      name: formDataP.value.txtName,
+      category: formDataP.value.txtCategory,
+      subcategory: formDataP.value.txtSubCategory,
+      descriptionProduct: formDataP.value.txtDescription
+
+      
+    }
+    cad+=this.productSeller.productType+"/";
+    cad+=this.productSeller.price+"/";
+    cad+=this.productSeller.name+"/";
+    cad+=this.productSeller.category+"/";
+    cad+=this.productSeller.subcategory+"/";
+    cad+=this.productSeller.descriptionProduct+"/";
+    alert(this.productSeller.price);
   }
 }
