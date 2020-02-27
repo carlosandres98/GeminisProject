@@ -41,12 +41,12 @@ export class LoginComponent implements OnInit {
   }
 
   goRegister() {
-    this.router.navigate(['register']);
+    this.router.navigate(['/register']);
 
   }
 
   goRecover() {
-    this.router.navigate(['recover']);
+    this.router.navigate(['/recover']);
   }
 
 }

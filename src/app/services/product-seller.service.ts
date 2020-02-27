@@ -5,8 +5,25 @@ import { Injectable } from '@angular/core';
 })
 export class ProductSellerService {
 
+  productSeller: ProductSellerI;
+
+  productSellerList: ProductSellerI[];
+
   constructor() { }
+
+  addProduct(product: ProductSellerI) {
+    this.productSellerList.push(product);
+  }
+
+
+
+  getAllProductSeller = () => this.productSellerList;
+
+
 }
+
+
+
 
 
 export interface ProductSellerI {
@@ -31,9 +48,9 @@ export interface ProductSellerI {
   bathrooms?: number;
   parking?: string;
 
-  productType : string;
+  productType: string;
   price: number;
   image: string;
 
-  idSeller : string;
+  idSeller: string;
 };
