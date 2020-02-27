@@ -14,14 +14,27 @@ export class SaleProductComponent implements OnInit {
     price: 0,
     idSeller: '',
     image: '',
-    
+
     size: [],
     name: '',
     category: '',
     subcategory: '',
     descriptionProduct: '',
-    descriptionCar: ''
-    
+
+    descriptionCar: '',
+    brand: '',
+    model: '',
+    typeCar: '',
+    placa: '',
+    yearCar: 0,
+
+    area: '',
+    stratum: 0,
+    sector: '',
+    antiquity: '',
+    rooms: 0,
+    bathrooms: 0,
+    parking: ''
   }
 
 

@@ -32,8 +32,8 @@ export interface ProductSellerI {
   category?: string;
   subcategory?: string;
   descriptionProduct?: string;
+  
   descriptionCar?: string;
-
   brand?: string;
   model?: string;
   typeCar?: string;
