@@ -1,13 +1,14 @@
 <app-navbar></app-navbar>
+<div style="background-color: #e0e0e0;">
 <div class="container">
     <div class="row">
         <div class="col-lg-6 col-xl-8">
-            <div *ngFor="let product of CarList" class="card m-3">
-                <div class="card-title m-2" style="color: blue;">
+            <div *ngFor="let product of CarList" class="card m-3" style="background-color: #ffffff;">
+                <div class="card-title m-2" style="color: #424242;">
                     <h2 class="text-center">Producto: {{product.name}}</h2>
                 </div>
-                <div class="card-title m-2" style="color: blue;">
-                    <h2 class="text-center">Precio: ${{product.price}}</h2>
+                <div class="card-title m-2" style="color: #424242;">
+                    <h4 class="text-center">Precio: ${{product.price}}</h4>
                 </div>
                 <div class="card-body centrar">
                     <img class="m-3 centrar" [src]="product.image" width="170px">
@@ -20,11 +21,11 @@
         <div class="col-lg-6 col-xl-4">
             <div class="card m-3">
                 <div class="card-title">
-                    <div *ngIf="CarList.length!=0" class="m-2">
+                    <div *ngIf="CarList.length!=0" class="m-2" class="text-center">
                         <h3>Tienes: {{countProducts}} Productos</h3>
                         <h4>{{totalPay | currency:'COP$'}} </h4>
                         <br>
-                        <button class="btn btn-outline-success full-width">Pagar</button>
+                        <button class="btn btn-outline-success">Pagar</button>
 
                     </div>
                 </div>
@@ -42,5 +43,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 <app-footer></app-footer>
