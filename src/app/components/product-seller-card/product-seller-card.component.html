@@ -1,0 +1,95 @@
+<div>
+
+    <h2 class="m-5">{{title}}</h2>
+    <div class="row row-design-content">
+        <div id="select" *ngFor="let product of productSellerList; let i = index"
+            class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+            <div *ngIf="product.productType=='Producto'" class="card m-3"
+                style="display: inline-block; background: #FFFFFF; width: 85%;">
+                <img [src]="product.imageP" class="card-img-top card-design-image" width="200" height="200"
+                    style="display: block;">
+                <div class="card-body">
+
+                    <div class="card-design-text-container">
+                        <h6 id="trunk-text" class="card-design-text-primary">{{product.name}}</h6>
+                        <h3 class="card-design-text-secondary">{{ product.price | currency:'$ '}}</h3>
+                    </div>
+                    <div style="text-align: center; justify-content: center;">
+                        <div class="m-2">
+                            <button class="mdc-button btn btn-outline-primary full-width btn-size-container"
+                                (click)="goAddToCar(product.name)">
+                                <i class="material-icons mdc-button__icon card-design-img-button"
+                                    aria-hidden="true">shopping_cart</i>
+                                <span>Al carrito</span>
+                            </button>
+                        </div>
+                        <div class="m-2">
+                            <button class="mdc-button btn btn-primary full-width btn-size-container" (click)="goBuy()">
+                                <i class="material-icons mdc-button__icon card-design-img-button"
+                                    aria-hidden="true">shopping_basket</i>
+                                <span>Comprar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngIf="product.productType=='Inmuebles'" class="card m-3"
+                style="display: inline-block; background: #FFFFFF; width: 85%;">
+                <img [src]="product.imageI" class="card-img-top card-design-image" width="200" height="200"
+                    style="display: block;">
+                <div class="card-body">
+
+                    <div class="card-design-text-container">
+                        <h6 id="trunk-text" class="card-design-text-primary">{{product.name}}</h6>
+                        <h3 class="card-design-text-secondary">{{ product.price | currency:'$ '}}</h3>
+                    </div>
+                    <div style="text-align: center; justify-content: center;">
+                        <div class="m-2">
+                            <button class="mdc-button btn btn-outline-primary full-width btn-size-container"
+                                (click)="goAddToCar(product.name)">
+                                <i class="material-icons mdc-button__icon card-design-img-button"
+                                    aria-hidden="true">shopping_cart</i>
+                                <span>Al carrito</span>
+                            </button>
+                        </div>
+                        <div class="m-2">
+                            <button class="mdc-button btn btn-primary full-width btn-size-container" (click)="goBuy()">
+                                <i class="material-icons mdc-button__icon card-design-img-button"
+                                    aria-hidden="true">shopping_basket</i>
+                                <span>Comprar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngIf="product.productType=='Vehículo'" class="card m-3"
+                style="display: inline-block; background: #FFFFFF; width: 85%;">
+                <img [src]="product.imageC" class="card-img-top card-design-image" width="200" height="200"
+                    style="display: block;">
+                <div class="card-body">
+
+                    <div class="card-design-text-container">
+                        <h6 id="trunk-text" class="card-design-text-primary">{{product.name}}</h6>
+                        <h3 class="card-design-text-secondary">{{ product.price | currency:'$ '}}</h3>
+                    </div>
+                    <div style="text-align: center; justify-content: center;">
+                        <div class="m-2">
+                            <button class="mdc-button btn btn-outline-primary full-width btn-size-container"
+                                (click)="goAddToCar(product.name)">
+                                <span>Editar</span>
+                            </button>
+                        </div>
+                        <div class="m-2">
+                            <button class="mdc-button btn btn-primary full-width btn-size-container" (click)="goBuy()">
+                                
+                                <span>Eliminar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

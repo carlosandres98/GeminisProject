@@ -21,6 +21,7 @@ import { SellerFormComponent } from './components/seller-form/seller-form.compon
 import { SellerDashboardComponent } from './components/seller-dashboard/seller-dashboard.component';
 import { SaleProductComponent } from './components/sale-product/sale-product.component';
 import { MyProductsComponent } from './components/my-products/my-products.component';
+import { ProductSellerCardComponent } from './components/product-seller-card/product-seller-card.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   {path: 'product-like', component: LikeProductComponent},
   {path: 'sale-product', component: SaleProductComponent},
+  {path: 'product-seller-card', component: ProductSellerCardComponent},
   {path: 'my-products', component: MyProductsComponent},
   {path: 'product-like-form', component: LikeProductFormComponent},
   {path: 'search-product/:productName', component: SearchProductComponent},

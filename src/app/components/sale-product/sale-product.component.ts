@@ -144,7 +144,7 @@ export class SaleProductComponent implements OnInit {
       model: formDataV.value.txtModel,
       typeCar: formDataV.value.txtType,
       placa: formDataV.value.txtPlaca,
-      imageC: '',
+      imageC: 'assets/img/products/electrodomesticos02.png',
       priceC: formDataV.value.txtPrice,
       yearCar: formDataV.value.txtYear,
 
@@ -197,7 +197,7 @@ export class SaleProductComponent implements OnInit {
       rooms: formDataIn.value.txtRooms,
       bathrooms: formDataIn.value.txtBathrooms,
       priceI: formDataIn.value.txtPrice,
-      imageI: 'assets/img/products/headphones.png',
+      imageI: 'assets/img/products/tecnologia02.png',
       parking: formDataIn.value.txtParking,
 
 

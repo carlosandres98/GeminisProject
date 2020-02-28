@@ -34,6 +34,7 @@ import { SellerDashboardComponent } from './components/seller-dashboard/seller-d
 import { SaleProductComponent } from './components/sale-product/sale-product.component';
 import { NavSellerComponent } from './components/nav-seller/nav-seller.component';
 import { MyProductsComponent } from './components/my-products/my-products.component';
+import { ProductSellerCardComponent } from './components/product-seller-card/product-seller-card.component';
 
 
 @NgModule({
@@ -91,7 +92,9 @@ import { MyProductsComponent } from './components/my-products/my-products.compon
 
     NavSellerComponent,
 
-    MyProductsComponent
+    MyProductsComponent,
+
+    ProductSellerCardComponent
   ],
   imports: [
     BrowserModule,
