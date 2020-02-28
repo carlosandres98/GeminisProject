@@ -13,7 +13,7 @@ export class SaleProductComponent implements OnInit {
 
   productSeller: ProductSellerI = {
     productType: '',
-  
+
     idSeller: '',
 
     size: [],
@@ -21,7 +21,7 @@ export class SaleProductComponent implements OnInit {
     category: '',
     subcategory: '',
     descriptionProduct: '',
-    priceP : 0,
+    priceP: 0,
     imageP: '',
 
     descriptionCar: '',
@@ -30,8 +30,8 @@ export class SaleProductComponent implements OnInit {
     typeCar: '',
     placa: '',
     yearCar: 0,
-    priceC : 0,
-    imageC : '',
+    priceC: 0,
+    imageC: '',
 
     area: '',
     stratum: 0,
@@ -40,9 +40,9 @@ export class SaleProductComponent implements OnInit {
     rooms: 0,
     bathrooms: 0,
     parking: '',
-    
-    priceI : 0,    
-    imageI : ''
+
+    priceI: 0,
+    imageI: ''
   }
 
 
@@ -73,14 +73,14 @@ export class SaleProductComponent implements OnInit {
       priceP: 0,
       imageP: '',
 
-      descriptionCar: '',
-      brand: '',
-      model: '',
-      typeCar: '',
-      placa: '',
+      descriptionCar: formDataV.value,
+      brand: formDataV.value,
+      model: formDataV.value,
+      typeCar: formDataV.value,
+      placa: formDataV.value,
       imageC: '',
-      priceC: 0,
-      yearCar: 0,
+      priceC: formDataV.value,
+      yearCar: formDataV.value,
 
 
 

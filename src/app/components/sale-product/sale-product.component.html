@@ -126,7 +126,7 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Precio</label>
                                 <input type="number" class="form-control" name="txtPrice"
-                                    [(ngModel)]="productSeller.image" required #txtPrice="ngModel">
+                                    [(ngModel)]="productSeller.priceP" required #txtPrice="ngModel">
                                 <div *ngIf="txtPrice.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
@@ -180,7 +180,7 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Imagen</label>
                                 <input type="text" class="form-control" name="txtFileV"
-                                    [(ngModel)]="productSeller.image" required #txtFileV="ngModel">
+                                    [(ngModel)]="productSeller.imageC" required #txtFileV="ngModel">
                                 <div *ngIf="txtFileV.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
@@ -188,7 +188,7 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Marca</label>
                                 <input type="text" class="form-control" name="txtBrand"
-                                    [(ngModel)]="productSeller.image" required #txtBrand="ngModel">
+                                    [(ngModel)]="productSeller.brand" required #txtBrand="ngModel">
                                 <div *ngIf="txtBrand.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
@@ -197,7 +197,7 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Modelo</label>
                                 <input type="text" class="form-control" name="txtModel"
-                                    [(ngModel)]="productSeller.image" required #txtModel="ngModel">
+                                    [(ngModel)]="productSeller.model" required #txtModel="ngModel">
                                 <div *ngIf="txtModel.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
@@ -205,7 +205,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Tipo</label>
-                                <input type="text" class="form-control" name="txtType" [(ngModel)]="productSeller.image"
+                                <input type="text" class="form-control" name="txtType" [(ngModel)]="productSeller.typeCar"
                                     required #txtType="ngModel">
                                 <div *ngIf="txtType.errors?.required" class="txt-invalid">
                                     Este campo es requerido
@@ -216,7 +216,7 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Placa</label>
                                 <input type="text" class="form-control" name="txtPlaca"
-                                    [(ngModel)]="productSeller.image" required #txtPlaca="ngModel">
+                                    [(ngModel)]="productSeller.placa" required #txtPlaca="ngModel">
                                 <div *ngIf="txtPlaca.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
@@ -225,7 +225,7 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Año</label>
                                 <input type="number" class="form-control" name="txtYear"
-                                    [(ngModel)]="productSeller.image" required #txtYear="ngModel">
+                                    [(ngModel)]="productSeller.yearCar" required #txtYear="ngModel">
                                 <div *ngIf="txtYear.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
@@ -234,7 +234,7 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Precio</label>
                                 <input type="number" class="form-control" name="txtPrice"
-                                    [(ngModel)]="productSeller.image" required #txtPrice="ngModel">
+                                    [(ngModel)]="productSeller.priceC" required #txtPrice="ngModel">
                                 <div *ngIf="txtPrice.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
@@ -261,7 +261,7 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Imagen</label>
                                 <input type="text" class="form-control" name="txtFileI"
-                                    [(ngModel)]="productSeller.image" required #txtFileI="ngModel">
+                                    [(ngModel)]="productSeller.imageI" required #txtFileI="ngModel">
                                 <div *ngIf="txtFileI.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
@@ -278,7 +278,7 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Estrato</label>
                                 <input type="number" class="form-control" name="txtStratum"
-                                    [(ngModel)]="productSeller.image" required #txtStratum="ngModel">
+                                    [(ngModel)]="productSeller.stratum" required #txtStratum="ngModel">
                                 <div *ngIf="txtStratum.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
@@ -286,7 +286,7 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Antiguedad</label>
                                 <input type="number" class="form-control" name="txtAntiquity"
-                                    [(ngModel)]="productSeller.image" required #txtAntiquity="ngModel">
+                                    [(ngModel)]="productSeller.antiquity" required #txtAntiquity="ngModel">
                                 <div *ngIf="txtAntiquity.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
@@ -295,7 +295,7 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Sector</label>
                                 <input type="text" class="form-control" name="txtSector"
-                                    [(ngModel)]="productSeller.image" required #txtSector="ngModel">
+                                    [(ngModel)]="productSeller.sector" required #txtSector="ngModel">
                                 <div *ngIf="txtSector.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
@@ -304,7 +304,7 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Habitaciones</label>
                                 <input type="text" class="form-control" name="txtRooms"
-                                    [(ngModel)]="productSeller.image" required #txtRooms="ngModel">
+                                    [(ngModel)]="productSeller.rooms" required #txtRooms="ngModel">
                                 <div *ngIf="txtRooms.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
@@ -313,7 +313,7 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Baños</label>
                                 <input type="number" class="form-control" name="txtBathrooms"
-                                    [(ngModel)]="productSeller.image" required #txtBathrooms="ngModel">
+                                    [(ngModel)]="productSeller.bathrooms" required #txtBathrooms="ngModel">
                                 <div *ngIf="txtBathrooms.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
@@ -322,7 +322,7 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Parqueadero</label>
                                 <input type="text" class="form-control" name="txtParking"
-                                    [(ngModel)]="productSeller.image" required #txtParking="ngModel">
+                                    [(ngModel)]="productSeller.parking" required #txtParking="ngModel">
                                 <div *ngIf="txtParking.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
