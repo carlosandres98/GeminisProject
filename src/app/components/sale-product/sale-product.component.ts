@@ -13,15 +13,16 @@ export class SaleProductComponent implements OnInit {
 
   productSeller: ProductSellerI = {
     productType: '',
-    price: 0,
+  
     idSeller: '',
-    image: '',
 
     size: [],
     name: '',
     category: '',
     subcategory: '',
     descriptionProduct: '',
+    priceP : 0,
+    imageP: '',
 
     descriptionCar: '',
     brand: '',
@@ -29,6 +30,8 @@ export class SaleProductComponent implements OnInit {
     typeCar: '',
     placa: '',
     yearCar: 0,
+    priceC : 0,
+    imageC : '',
 
     area: '',
     stratum: 0,
@@ -36,7 +39,10 @@ export class SaleProductComponent implements OnInit {
     antiquity: '',
     rooms: 0,
     bathrooms: 0,
-    parking: ''
+    parking: '',
+    
+    priceI : 0,    
+    imageI : ''
   }
 
 
@@ -54,20 +60,60 @@ export class SaleProductComponent implements OnInit {
 
   saveDataV(formDataV: NgForm) {
 
+    this.productSeller = {
+      productType: 'Vehículo',
+
+      idSeller: '1037',
+
+      size: [],
+      name: '',
+      category: '',
+      subcategory: '',
+      descriptionProduct: '',
+      priceP: 0,
+      imageP: '',
+
+      descriptionCar: '',
+      brand: '',
+      model: '',
+      typeCar: '',
+      placa: '',
+      imageC: '',
+      priceC: 0,
+      yearCar: 0,
+
+
+
+      area: '',
+      stratum: 0,
+      sector: '',
+      antiquity: '',
+      rooms: 0,
+      bathrooms: 0,
+      imageI: '',
+      priceI: 0,
+      parking: ''
+
+    }
+
+    this.service.addProduct(this.productSeller);
+
   }
 
   saveDataIn(formDataIn: NgForm) {
 
     this.productSeller = {
       productType: 'Inmuebles',
-      price: formDataIn.value.txtPrice,
+
       idSeller: '1037',
-      image: 'assets/img/products/headphones.png',
+
       size: [],
       name: '',
       category: '',
       subcategory: '',
       descriptionProduct: '',
+      priceP: 0,
+      imageP: '',
 
       descriptionCar: '',
       brand: '',
@@ -75,6 +121,8 @@ export class SaleProductComponent implements OnInit {
       typeCar: '',
       placa: '',
       yearCar: 0,
+      priceC: 0,
+      imageC: '',
 
       area: formDataIn.value.txtArea,
       stratum: formDataIn.value.txtStratum,
@@ -82,7 +130,11 @@ export class SaleProductComponent implements OnInit {
       antiquity: formDataIn.value.txtAntiquity,
       rooms: formDataIn.value.txtRooms,
       bathrooms: formDataIn.value.txtBathrooms,
-      parking: formDataIn.value.txtParking
+      priceI: formDataIn.value.txtPrice,
+      imageI: 'assets/img/products/headphones.png',
+      parking: formDataIn.value.txtParking,
+
+
     }
 
     this.service.addProduct(this.productSeller);
@@ -107,6 +159,8 @@ export class SaleProductComponent implements OnInit {
       typeCar: '',
       placa: '',
       yearCar: 0,
+      priceC: 0,
+      imageC: '',
 
       area: '',
       stratum: 0,
@@ -114,7 +168,11 @@ export class SaleProductComponent implements OnInit {
       antiquity: '',
       rooms: 0,
       bathrooms: 0,
-      parking: ''
+      parking: '',
+      priceI: 0,
+      imageI: ''
+
+
     }
 
     this.service.addProduct(this.productSeller);
