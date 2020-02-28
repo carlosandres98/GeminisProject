@@ -74,13 +74,13 @@ export class SaleProductComponent implements OnInit {
       imageP: '',
 
       descriptionCar: formDataV.value,
-      brand: formDataV.value,
-      model: formDataV.value,
-      typeCar: formDataV.value,
-      placa: formDataV.value,
+      brand: formDataV.value.txtBrand,
+      model: formDataV.value.txtModel,
+      typeCar: formDataV.value.txtType,
+      placa: formDataV.value.txtPlaca,
       imageC: '',
-      priceC: formDataV.value,
-      yearCar: formDataV.value,
+      priceC: formDataV.value.txtPrice,
+      yearCar: formDataV.value.txtYear,
 
 
 

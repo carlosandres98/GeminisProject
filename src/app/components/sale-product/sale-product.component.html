@@ -49,7 +49,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            
+
                         </div>
                     </form>
                 </div>
@@ -117,8 +117,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Imagen</label>
-                                <input type="text" class="form-control" name="txtFile" [(ngModel)]="productSeller.imageP"
-                                    required #txtFile="ngModel">
+                                <input type="text" class="form-control" name="txtFile"
+                                    [(ngModel)]="productSeller.imageP" required #txtFile="ngModel">
                                 <div *ngIf="txtFile.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
@@ -205,8 +205,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Tipo</label>
-                                <input type="text" class="form-control" name="txtType" [(ngModel)]="productSeller.typeCar"
-                                    required #txtType="ngModel">
+                                <input type="text" class="form-control" name="txtType"
+                                    [(ngModel)]="productSeller.typeCar" required #txtType="ngModel">
                                 <div *ngIf="txtType.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
