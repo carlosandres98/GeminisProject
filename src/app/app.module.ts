@@ -32,6 +32,8 @@ import { LikeProductFormComponent } from './components/like-product-form/like-pr
 import { SellerFormComponent } from './components/seller-form/seller-form.component';
 import { SellerDashboardComponent } from './components/seller-dashboard/seller-dashboard.component';
 import { SaleProductComponent } from './components/sale-product/sale-product.component';
+import { NavSellerComponent } from './components/nav-seller/nav-seller.component';
+import { MyProductsComponent } from './components/my-products/my-products.component';
 
 
 @NgModule({
@@ -85,7 +87,11 @@ import { SaleProductComponent } from './components/sale-product/sale-product.com
 
     SellerDashboardComponent,
 
-    SaleProductComponent
+    SaleProductComponent,
+
+    NavSellerComponent,
+
+    MyProductsComponent
   ],
   imports: [
     BrowserModule,

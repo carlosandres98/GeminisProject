@@ -13,7 +13,6 @@ export class ProductSellerService {
 
   addProduct(product: ProductSellerI) {
     this.productSellerList.push(product);
-    console.log(product);
   }
 
 

@@ -9,7 +9,43 @@ import { NgForm } from '@angular/forms';
 })
 export class SaleProductComponent implements OnInit {
 
+  login: boolean = false;
   productList: ProductSellerI[] = [];
+
+
+  productSellerProduct: ProductSellerI = {
+    productType: '',
+
+    idSeller: '',
+
+    size: [],
+    name: '',
+    category: '',
+    subcategory: '',
+    descriptionProduct: '',
+    priceP: 0,
+    imageP: '',
+
+    descriptionCar: '',
+    brand: '',
+    model: '',
+    typeCar: '',
+    placa: '',
+    yearCar: 0,
+    priceC: 0,
+    imageC: '',
+
+    area: '',
+    stratum: 0,
+    sector: '',
+    antiquity: '',
+    rooms: 0,
+    bathrooms: 0,
+    parking: '',
+
+    priceI: 0,
+    imageI: ''
+  }
 
   productSeller: ProductSellerI = {
     productType: '',
@@ -48,14 +84,10 @@ export class SaleProductComponent implements OnInit {
 
 
   constructor(private service: ProductSellerService) {
-    this.productList = service.getAllProductSeller();
+
   }
 
   ngOnInit() {
-  }
-
-  goLogin(formData: NgForm) {
-    console.log(formData);
   }
 
   saveDataV(formDataV: NgForm) {
@@ -142,7 +174,7 @@ export class SaleProductComponent implements OnInit {
   }
 
   saveProduct(formDataP: NgForm) {
-    this.productSeller = {
+    this.productSellerProduct = {
       productType: 'Producto',
       priceP: formDataP.value.txtPrice,
       idSeller: '1037',
@@ -171,22 +203,11 @@ export class SaleProductComponent implements OnInit {
       parking: '',
       priceI: 0,
       imageI: ''
-
-
     }
 
-    this.service.addProduct(this.productSeller);
-
-    if (this.productList.length > 2) {
-      this.see();
-    } else {
-
-    }
+    this.service.addProduct(this.productSellerProduct);
   }
 
-  see() {
-    console.log(this.productList);
-  }
 
   goProfile() {
 
