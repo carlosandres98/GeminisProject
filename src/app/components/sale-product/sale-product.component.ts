@@ -9,6 +9,8 @@ import { NgForm } from '@angular/forms';
 })
 export class SaleProductComponent implements OnInit {
 
+  productList: ProductSellerI[] = [];
+
   productSeller: ProductSellerI = {
     productType: '',
     price: 0,
@@ -39,7 +41,9 @@ export class SaleProductComponent implements OnInit {
 
 
 
-  constructor(private s: ProductSellerService) { }
+  constructor(private service: ProductSellerService) {
+    this.productList = service.getAllProductSeller();
+  }
 
   ngOnInit() {
   }
@@ -49,28 +53,45 @@ export class SaleProductComponent implements OnInit {
   }
 
   saveProduct(formDataP: NgForm) {
-
-    let cad : string = "-";
-
     this.productSeller = {
       productType: 'Product',
       price: formDataP.value.txtPrice,
-      idSeller: '',
-      image: formDataP.value.txtFile,
+      idSeller: '1037',
+      image: 'assets/img/products/headphones.png',
       size: [],
       name: formDataP.value.txtName,
       category: formDataP.value.txtCategory,
       subcategory: formDataP.value.txtSubCategory,
-      descriptionProduct: formDataP.value.txtDescription
+      descriptionProduct: formDataP.value.txtDescription,
 
-      
+      descriptionCar: '',
+      brand: '',
+      model: '',
+      typeCar: '',
+      placa: '',
+      yearCar: 0,
+
+      area: '',
+      stratum: 0,
+      sector: '',
+      antiquity: '',
+      rooms: 0,
+      bathrooms: 0,
+      parking: ''
     }
-    cad+=this.productSeller.productType+"/";
-    cad+=this.productSeller.price+"/";
-    cad+=this.productSeller.name+"/";
-    cad+=this.productSeller.category+"/";
-    cad+=this.productSeller.subcategory+"/";
-    cad+=this.productSeller.descriptionProduct+"/";
-    alert(this.productSeller.price);
+
+    this.service.addProduct(this.productSeller);
+
+    if (this.productList.length > 2) {
+      this.see();
+    } else {
+
+    }
+  }
+
+  see() {
+    console.log(this.productList);
   }
 }
+
+

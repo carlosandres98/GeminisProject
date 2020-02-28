@@ -7,12 +7,13 @@ export class ProductSellerService {
 
   productSeller: ProductSellerI;
 
-  productSellerList: ProductSellerI[];
+  productSellerList: ProductSellerI[] = [];
 
   constructor() { }
 
   addProduct(product: ProductSellerI) {
     this.productSellerList.push(product);
+    console.log(product);
   }
 
 
