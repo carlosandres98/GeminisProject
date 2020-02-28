@@ -23,23 +23,23 @@ export class ProductSellerService {
 
 }
 
-
-
-
-
 export interface ProductSellerI {
   size?: string[];
   name?: string;
   category?: string;
   subcategory?: string;
   descriptionProduct?: string;
-  
+  imageP?: string;
+  priceP?: number;
+
   descriptionCar?: string;
   brand?: string;
   model?: string;
   typeCar?: string;
   placa?: string;
   yearCar?: number;
+  imageC?: string;
+  priceC?: number;
 
   area?: string;
   stratum?: number;
@@ -48,10 +48,9 @@ export interface ProductSellerI {
   rooms?: number;
   bathrooms?: number;
   parking?: string;
+  imageI?: string;
+  priceI?: number;
 
   productType: string;
-  price: number;
-  image: string;
-
   idSeller: string;
 };

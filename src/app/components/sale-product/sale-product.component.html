@@ -49,9 +49,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div *ngIf="login==false" class="col-sm-6 col-lg-2 mt-2">
-                                <a routerLink="/login" class="btn btn-outline-primary">Iniciar Session</a>
-                            </div>
+                            
                         </div>
                     </form>
                 </div>
@@ -89,8 +87,6 @@
             <li class="nav-item dropdown">
 
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" (click)="goLogin()">Iniciar sesión</a>
-                    <a class="dropdown-item" (click)="goRegister()">Registrarme</a>
                     <a class="dropdown-item" (click)="goProfile()">Ver perfil</a>
 
                     <div class="dropdown-divider"></div>
@@ -121,7 +117,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Imagen</label>
-                                <input type="text" class="form-control" name="txtFile" [(ngModel)]="productSeller.image"
+                                <input type="text" class="form-control" name="txtFile" [(ngModel)]="productSeller.imageP"
                                     required #txtFile="ngModel">
                                 <div *ngIf="txtFile.errors?.required" class="txt-invalid">
                                     Este campo es requerido
@@ -130,7 +126,7 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Precio</label>
                                 <input type="number" class="form-control" name="txtPrice"
-                                    [(ngModel)]="productSeller.txtPassword" required #txtPrice="ngModel">
+                                    [(ngModel)]="productSeller.image" required #txtPrice="ngModel">
                                 <div *ngIf="txtPrice.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
@@ -164,7 +160,7 @@
 
                             </div>
 
-                            <button (click)="goLogin(formDataP)" [disabled]="formDataP.valid==false" type="submit"
+                            <button (click)="saveProduct(formDataP)" [disabled]="formDataP.valid==false" type="submit"
                                 class="btn btn-primary full-width">Agregar
                                 Producto</button>
 
@@ -180,10 +176,10 @@
 
                     <div class="card-body">
                         <h5 class="card-title text-center">Añadir Vehículos</h5>
-                        <form (ngSubmit)="goLogin(formDataV)" #formDataV="ngForm" novalidate="">
+                        <form (ngSubmit)="saveDataV(formDataV)" #formDataV="ngForm" novalidate="">
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Imagen</label>
-                                <input type="file" class="form-control" name="txtFileV"
+                                <input type="text" class="form-control" name="txtFileV"
                                     [(ngModel)]="productSeller.image" required #txtFileV="ngModel">
                                 <div *ngIf="txtFileV.errors?.required" class="txt-invalid">
                                     Este campo es requerido
@@ -245,7 +241,7 @@
 
                             </div>
 
-                            <button (click)="goLogin(formDataV)" [disabled]="formDataV.valid==false" type="submit"
+                            <button (click)="saveDataV(formDataV)" [disabled]="formDataV.valid==false" type="submit"
                                 class="btn btn-primary full-width">Agregar
                                 Vehículo</button>
 
@@ -260,11 +256,11 @@
 
                     <div class="card-body">
                         <h5 class="card-title text-center">Añadir Inmuebles</h5>
-                        <form (ngSubmit)="goLogin(formDataIn)" #formDataIn="ngForm" novalidate="">
+                        <form (ngSubmit)="saveDataIn(formDataIn)" #formDataIn="ngForm" novalidate="">
 
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Imagen</label>
-                                <input type="file" class="form-control" name="txtFileI"
+                                <input type="text" class="form-control" name="txtFileI"
                                     [(ngModel)]="productSeller.image" required #txtFileI="ngModel">
                                 <div *ngIf="txtFileI.errors?.required" class="txt-invalid">
                                     Este campo es requerido
@@ -275,65 +271,65 @@
                                 <input type="text" class="form-control" name="txtArea" [(ngModel)]="productSeller.area"
                                     required #txtArea="ngModel">
 
-                                <div *ngIf="txtE.errors?.required" class="txt-invalid">
+                                <div *ngIf="txtArea.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Estrato</label>
-                                <input type="number" class="form-control" name="txtPassword"
-                                    [(ngModel)]="userDB.txtPassword" required #txtP="ngModel">
-                                <div *ngIf="txtP.errors?.required" class="txt-invalid">
+                                <input type="number" class="form-control" name="txtStratum"
+                                    [(ngModel)]="productSeller.image" required #txtStratum="ngModel">
+                                <div *ngIf="txtStratum.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Antiguedad</label>
-                                <input type="number" class="form-control" name="txtPassword"
-                                    [(ngModel)]="userDB.txtPassword" required #txtP="ngModel">
-                                <div *ngIf="txtP.errors?.required" class="txt-invalid">
+                                <input type="number" class="form-control" name="txtAntiquity"
+                                    [(ngModel)]="productSeller.image" required #txtAntiquity="ngModel">
+                                <div *ngIf="txtAntiquity.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
 
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Sector</label>
-                                <input type="text" class="form-control" name="txtPassword"
-                                    [(ngModel)]="userDB.txtPassword" required #txtP="ngModel">
-                                <div *ngIf="txtP.errors?.required" class="txt-invalid">
+                                <input type="text" class="form-control" name="txtSector"
+                                    [(ngModel)]="productSeller.image" required #txtSector="ngModel">
+                                <div *ngIf="txtSector.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
 
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Habitaciones</label>
-                                <input type="text" class="form-control" name="txtPassword"
-                                    [(ngModel)]="userDB.txtPassword" required #txtP="ngModel">
-                                <div *ngIf="txtP.errors?.required" class="txt-invalid">
+                                <input type="text" class="form-control" name="txtRooms"
+                                    [(ngModel)]="productSeller.image" required #txtRooms="ngModel">
+                                <div *ngIf="txtRooms.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
 
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Baños</label>
-                                <input type="number" class="form-control" name="txtPassword"
-                                    [(ngModel)]="userDB.txtPassword" required #txtP="ngModel">
-                                <div *ngIf="txtP.errors?.required" class="txt-invalid">
+                                <input type="number" class="form-control" name="txtBathrooms"
+                                    [(ngModel)]="productSeller.image" required #txtBathrooms="ngModel">
+                                <div *ngIf="txtBathrooms.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
 
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Parqueadero</label>
-                                <input type="text" class="form-control" name="txtPassword"
-                                    [(ngModel)]="userDB.txtPassword" required #txtP="ngModel">
-                                <div *ngIf="txtP.errors?.required" class="txt-invalid">
+                                <input type="text" class="form-control" name="txtParking"
+                                    [(ngModel)]="productSeller.image" required #txtParking="ngModel">
+                                <div *ngIf="txtParking.errors?.required" class="txt-invalid">
                                     Este campo es requerido
                                 </div>
 
                             </div>
 
-                            <button (click)="goLogin(formData)" [disabled]="formData.valid==false" type="submit"
+                            <button (click)="saveDataIn(formDataIn)" [disabled]="formDataIn.valid==false" type="submit"
                                 class="btn btn-primary full-width">Agregar
                                 Inmueble</button>
                         </form>

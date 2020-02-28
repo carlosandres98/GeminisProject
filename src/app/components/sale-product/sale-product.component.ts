@@ -52,12 +52,49 @@ export class SaleProductComponent implements OnInit {
     console.log(formData);
   }
 
-  saveProduct(formDataP: NgForm) {
+  saveDataV(formDataV: NgForm) {
+
+  }
+
+  saveDataIn(formDataIn: NgForm) {
+
     this.productSeller = {
-      productType: 'Product',
-      price: formDataP.value.txtPrice,
+      productType: 'Inmuebles',
+      price: formDataIn.value.txtPrice,
       idSeller: '1037',
       image: 'assets/img/products/headphones.png',
+      size: [],
+      name: '',
+      category: '',
+      subcategory: '',
+      descriptionProduct: '',
+
+      descriptionCar: '',
+      brand: '',
+      model: '',
+      typeCar: '',
+      placa: '',
+      yearCar: 0,
+
+      area: formDataIn.value.txtArea,
+      stratum: formDataIn.value.txtStratum,
+      sector: formDataIn.value.txtSector,
+      antiquity: formDataIn.value.txtAntiquity,
+      rooms: formDataIn.value.txtRooms,
+      bathrooms: formDataIn.value.txtBathrooms,
+      parking: formDataIn.value.txtParking
+    }
+
+    this.service.addProduct(this.productSeller);
+
+  }
+
+  saveProduct(formDataP: NgForm) {
+    this.productSeller = {
+      productType: 'Producto',
+      priceP: formDataP.value.txtPrice,
+      idSeller: '1037',
+      imageP: 'assets/img/products/headphones.png',
       size: [],
       name: formDataP.value.txtName,
       category: formDataP.value.txtCategory,
@@ -91,6 +128,14 @@ export class SaleProductComponent implements OnInit {
 
   see() {
     console.log(this.productList);
+  }
+
+  goProfile() {
+
+  }
+
+  goHelpCenter() {
+
   }
 }
 
