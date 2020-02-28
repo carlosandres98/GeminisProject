@@ -13,6 +13,40 @@ export class SaleProductComponent implements OnInit {
   productList: ProductSellerI[] = [];
 
 
+  productSellerVehicle: ProductSellerI = {
+    productType: '',
+
+    idSeller: '',
+
+    size: [],
+    name: '',
+    category: '',
+    subcategory: '',
+    descriptionProduct: '',
+    priceP: 0,
+    imageP: '',
+
+    descriptionCar: '',
+    brand: '',
+    model: '',
+    typeCar: '',
+    placa: '',
+    yearCar: 0,
+    priceC: 0,
+    imageC: '',
+
+    area: '',
+    stratum: 0,
+    sector: '',
+    antiquity: '',
+    rooms: 0,
+    bathrooms: 0,
+    parking: '',
+
+    priceI: 0,
+    imageI: ''
+  }
+
   productSellerProduct: ProductSellerI = {
     productType: '',
 
@@ -92,7 +126,7 @@ export class SaleProductComponent implements OnInit {
 
   saveDataV(formDataV: NgForm) {
 
-    this.productSeller = {
+    this.productSellerVehicle = {
       productType: 'Vehículo',
 
       idSeller: '1037',
@@ -128,7 +162,7 @@ export class SaleProductComponent implements OnInit {
 
     }
 
-    this.service.addProduct(this.productSeller);
+    this.service.addProduct(this.productSellerVehicle);
 
   }
 
