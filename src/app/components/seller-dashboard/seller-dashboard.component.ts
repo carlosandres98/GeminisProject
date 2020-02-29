@@ -71,10 +71,10 @@ export class SellerDashboardComponent implements OnInit {
         this.rt.navigate(['/my-products']);
         break;
       case 2:
-
+        this.rt.navigate(['/maintenance']);
         break;
       case 3:
-
+        this.rt.navigate(['/maintenance']);
         break;
     }
   }

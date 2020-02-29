@@ -22,11 +22,13 @@ import { SellerDashboardComponent } from './components/seller-dashboard/seller-d
 import { SaleProductComponent } from './components/sale-product/sale-product.component';
 import { MyProductsComponent } from './components/my-products/my-products.component';
 import { ProductSellerCardComponent } from './components/product-seller-card/product-seller-card.component';
+import { MaintenanceComponent } from './components/maintenance/maintenance.component';
 
 
 const routes: Routes = [
   
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+  {path: 'maintenance', component: MaintenanceComponent},
   {path: 'product-like', component: LikeProductComponent},
   {path: 'sale-product', component: SaleProductComponent},
   {path: 'product-seller-card', component: ProductSellerCardComponent},
