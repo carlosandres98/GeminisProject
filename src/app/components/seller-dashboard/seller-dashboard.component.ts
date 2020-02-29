@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductI } from '../../services/product-service.service';
 import { Router } from '@angular/router';
+import { ProductSellerI, ProductSellerService } from '../../services/product-seller.service';
 
 @Component({
   selector: 'app-seller-dashboard',
@@ -9,7 +10,10 @@ import { Router } from '@angular/router';
 })
 export class SellerDashboardComponent implements OnInit {
 
-  constructor(private rt: Router) { }
+  productList: ProductSellerI[] = [];
+  constructor(private rt: Router, private service: ProductSellerService) {
+    this.productList = service.getAllProductSeller();
+  }
 
   options: any[] = [
     {
@@ -25,7 +29,7 @@ export class SellerDashboardComponent implements OnInit {
     {
       img: 'assets/img/products/electrodomesticos01.png',
       text: 'Tus Productos',
-      sales: '2 k',
+      sales: '2 K',
       followers: '720',
       c1: {
         txt1: 'Products: ',
@@ -56,6 +60,8 @@ export class SellerDashboardComponent implements OnInit {
   ];
 
   goNavigate(idx: number) {
+    this.productList = this.service.getAllProductSeller();
+    this.options[1].sales = this.productList.length;
 
     switch (idx) {
       case 0:

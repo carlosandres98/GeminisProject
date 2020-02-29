@@ -5,7 +5,7 @@
         <div id="select" *ngFor="let product of productSellerList; let i = index"
             class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
             <div *ngIf="product.productType=='Producto'" class="card m-3"
-                style="display: inline-block; background: #FFFFFF; width: 90%;">
+                style="display: inline-block; background: #FFFFFF; width: 97%;">
                 <img [src]="product.imageP" class="card-img-top card-design-image" width="200" height="200"
                     style="display: block;">
                 <div class="card-body">
@@ -31,7 +31,7 @@
             </div>
 
             <div *ngIf="product.productType=='Inmuebles'" class="card m-3"
-                style="display: inline-block; background: #FFFFFF; width: 90%;">
+                style="display: inline-block; background: #FFFFFF; width: 97%;">
                 <img [src]="product.imageI" class="card-img-top card-design-image" width="200" height="200"
                     style="display: block;">
                 <div class="card-body">
@@ -58,7 +58,7 @@
             </div>
 
             <div *ngIf="product.productType=='Vehículo'" class="card m-3"
-                style="display: inline-block; background: #FFFFFF; width: 90%;">
+                style="display: inline-block; background: #FFFFFF; width: 97%;">
                 <img [src]="product.imageC" class="card-img-top card-design-image" width="200" height="200"
                     style="display: block;">
                 <div class="card-body">
