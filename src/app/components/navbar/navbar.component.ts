@@ -82,9 +82,7 @@ export class NavbarComponent implements OnInit {
 
   }
 
-  goHelpCenter() {
-    this.router.navigate(['/helpcenter']);
-  }
+  
 
   signOff() {
     this.router.navigate(['/login']);
