@@ -36,6 +36,7 @@ import { NavSellerComponent } from './components/nav-seller/nav-seller.component
 import { MyProductsComponent } from './components/my-products/my-products.component';
 import { ProductSellerCardComponent } from './components/product-seller-card/product-seller-card.component';
 import { MaintenanceComponent } from './components/maintenance/maintenance.component';
+import { PProfileComponent } from './components/p-profile/p-profile.component';
 
 
 @NgModule({
@@ -97,7 +98,9 @@ import { MaintenanceComponent } from './components/maintenance/maintenance.compo
 
     ProductSellerCardComponent,
 
-    MaintenanceComponent
+    MaintenanceComponent,
+
+    PProfileComponent
   ],
   imports: [
     BrowserModule,

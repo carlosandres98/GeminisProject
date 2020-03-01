@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit {
 
   public login: boolean = true;
 
-  public navbar: any = {
+    navbar: any = {
     home: 'Ofertas',
     ropa: {
       category: 'Ropa',

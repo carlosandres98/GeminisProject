@@ -23,6 +23,7 @@ import { SaleProductComponent } from './components/sale-product/sale-product.com
 import { MyProductsComponent } from './components/my-products/my-products.component';
 import { ProductSellerCardComponent } from './components/product-seller-card/product-seller-card.component';
 import { MaintenanceComponent } from './components/maintenance/maintenance.component';
+import { PProfileComponent } from './components/p-profile/p-profile.component';
 
 
 const routes: Routes = [
@@ -43,7 +44,7 @@ const routes: Routes = [
   {path: 'search/:category/:subCategory', component: SearchComponent},
   {path: 'login', component: LoginComponent},
   {path: 'car', component: CarComponent},
-  {path: 'personal-profile', component: PersonalProfileComponent},
+  {path: 'profile', component: PProfileComponent},
   {path: 'detail-product/:product', component: ProductDetailComponent},
   {path : 'products', component : ProductsComponent},
   {path : 'register', component : RegisterComponent },
